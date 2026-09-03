@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { CalendarDays, Clock, MapPin } from "lucide-react";
 import bandaFoto from "@/assets/banda-foto.jpg";
 
@@ -52,15 +51,22 @@ const iconiteFolclorice = [
   },
 ];
 
-function zilePanaLaDeschidere() {
-  const start = new Date("2026-09-18T00:00:00+03:00").getTime();
-  const azi = Date.now();
-  return Math.max(0, Math.ceil((start - azi) / 86400000));
-}
+/** Link Google Calendar cu data, ora și locația evenimentului. */
+const googleCalendarUrl = (() => {
+  const params = new URLSearchParams({
+    action: "TEMPLATE",
+    text: "Târgul 100 de Tradiții Românești",
+    // 18–20 septembrie 2026, 10:00–19:00 (ora României, UTC+3) în UTC
+    dates: "20260918T070000Z/20260920T160000Z",
+    location: "Muzeul Național al Țăranului Român, Str. Monetăriei 3, București",
+    details:
+      "Târg de tradiții, meșteșuguri și gastronomie românească, organizat de Asociația Kogaion 115. Intrarea este liberă. Program zilnic 10:00 – 19:00.",
+    ctz: "Europe/Bucharest",
+  });
+  return `https://calendar.google.com/calendar/render?${params.toString()}`;
+})();
 
 export function Hero() {
-  const [zile, setZile] = useState<number | null>(null);
-  useEffect(() => setZile(zilePanaLaDeschidere()), []);
 
   return (
     <section
@@ -81,13 +87,13 @@ export function Hero() {
       {/* Ramă dublă: bordură roșie + linie aurie interioară */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-2 z-20 border-[3px] border-brand sm:inset-3"
+        className="pointer-events-none absolute top-20 right-2 bottom-2 left-2 z-20 border-[3px] border-brand sm:right-3 sm:bottom-3 sm:left-3"
       >
         <div className="absolute inset-[6px] border border-ocru/70" />
       </div>
 
       {/* Ornamente în cele 4 colțuri */}
-      <div aria-hidden="true" className="pointer-events-none absolute inset-2 z-20 sm:inset-3">
+      <div aria-hidden="true" className="pointer-events-none absolute top-20 right-2 bottom-2 left-2 z-20 sm:right-3 sm:bottom-3 sm:left-3">
         <ColtOrnament className="absolute top-1 left-1 h-14 w-14 sm:h-20 sm:w-20" />
         <ColtOrnament className="absolute top-1 right-1 h-14 w-14 scale-x-[-1] sm:h-20 sm:w-20" />
         <ColtOrnament className="absolute bottom-1 left-1 h-14 w-14 scale-y-[-1] sm:h-20 sm:w-20" />
@@ -143,7 +149,7 @@ export function Hero() {
           </span>
           <p className="leading-tight">
             <span className="eyebrow block text-crem/85">Intrarea este</span>
-            <span className="font-serif text-2xl font-black sm:text-3xl">Gratuită!</span>
+            <span className="section-title block text-2xl font-black sm:text-3xl">Gratuită!</span>
           </p>
           <span aria-hidden="true" className="text-lg text-ocru">
             ★
@@ -164,7 +170,9 @@ export function Hero() {
         {/* Butoane */}
         <div className="mt-4 flex w-full max-w-md flex-col gap-3 sm:w-auto sm:flex-row">
           <a
-            href="#locatie"
+            href={googleCalendarUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex h-11 items-center justify-center rounded-md bg-brand px-6 text-sm font-semibold text-crem transition-colors hover:bg-brand/90"
           >
             Adaugă în calendar
@@ -176,13 +184,6 @@ export function Hero() {
             Vezi ce se întâmplă
           </a>
         </div>
-        <p className="mt-3 text-xs tracking-[0.16em] text-carbune/60 uppercase">
-          {zile === null
-            ? "Te așteptăm în septembrie"
-            : zile > 0
-              ? `Mai sunt ${zile} zile până la deschidere`
-              : "Târgul este deschis"}
-        </p>
       </div>
 
       {/* Bandă foto */}
