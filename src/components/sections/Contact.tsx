@@ -156,7 +156,7 @@ export function Contact() {
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel>Subiect</FormLabel>
-                        <Select onValueChange={field.onChange} value={field.value}>
+                        <Select onValueChange={field.onChange} value={field.value ?? ""}>
                           <FormControl>
                             <SelectTrigger>
                               <SelectValue placeholder="Alege un subiect" />
