@@ -33,7 +33,7 @@ export function Locatie() {
           </ul>
 
 
-          <Button asChild className="mt-8">
+          <Button asChild className="mt-6">
             <a href={locatie.linkHarta} target="_blank" rel="noopener noreferrer">
               {locatie.butonHarta}
               <ExternalLink className="ml-2 h-4 w-4" aria-hidden="true" />
