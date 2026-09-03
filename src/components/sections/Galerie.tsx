@@ -4,6 +4,7 @@ import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Reveal } from "@/components/Reveal";
 import { siteContent } from "@/content/site-content";
 import tesatoareAsset from "@/assets/galerie-tesatoare.jpg.asset.json";
+import bucateAsset from "@/assets/galerie-bucate.jpg.asset.json";
 
 /**
  * TOATE imaginile galeriei sunt definite aici, într-un singur array.
@@ -14,7 +15,7 @@ const galleryImages = [
   { src: "/galerie-1.jpg", alt: "Olar modelând un vas pe roata de lut" },
   { src: tesatoareAsset.url, alt: "Țesătoare lucrând la război de țesut" },
   { src: "/galerie-3.jpg", alt: "Ansamblu folcloric dansând pe scena târgului" },
-  { src: "/galerie-4.jpg", alt: "Bucate tradiționale gătite pe vatră" },
+  { src: bucateAsset.url, alt: "Bucate tradiționale" },
   { src: "/galerie-5.jpg", alt: "Copii participând la un atelier de încondeiat ouă" },
   { src: "/galerie-6.jpg", alt: "Stand cu textile și cusături tradiționale" },
   { src: "/galerie-7.jpg", alt: "Fierar lucrând la nicovală în fața publicului" },
