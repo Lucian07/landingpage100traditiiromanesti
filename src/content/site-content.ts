@@ -122,6 +122,11 @@ export const siteContent = {
         label: "Instagram",
         url: "https://www.instagram.com/fundatiakogaion115?igsi=ZTBmcWF6aGoybXdk",
       },
+      {
+        retea: "tiktok" as const,
+        label: "TikTok",
+        url: "https://www.tiktok.com/@asociatiakogaion115?_r=1&_t=ZN-99QSxqZp3kE",
+      },
     ],
     subiecte: [
       "Informații generale",
