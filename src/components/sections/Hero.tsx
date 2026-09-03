@@ -157,11 +157,9 @@ export function Hero() {
             </div>
           </div>
 
-          <div aria-hidden="true" className="my-3 flex items-center gap-3 md:my-2.5">
-            <span className="h-px flex-1 bg-ocru/60" />
-            <span className="h-1.5 w-1.5 rotate-45 bg-ocru" />
-            <span className="h-px flex-1 bg-ocru/60" />
-          </div>
+          <div aria-hidden="true" className="h-3 md:h-2.5" />
+
+
 
           {/* Locație */}
           <div className="flex items-start justify-center gap-2">
