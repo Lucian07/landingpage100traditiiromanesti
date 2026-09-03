@@ -158,7 +158,7 @@ export function Hero() {
 
 
         {/* Locație */}
-        <div className="mt-4 flex items-start gap-2">
+        <div className="mt-7 flex items-start gap-2 md:mt-4">
           <MapPin className="mt-1 h-4 w-4 shrink-0 text-brand" aria-hidden="true" />
           <p className="text-left">
             <span className="block text-sm font-semibold tracking-[0.12em] text-carbune uppercase sm:text-base">
@@ -169,7 +169,8 @@ export function Hero() {
         </div>
 
         {/* Butoane */}
-        <div className="mt-4 flex w-full max-w-md flex-col gap-3 sm:w-auto sm:flex-row">
+        <div className="mt-7 flex w-full max-w-md flex-col gap-3 sm:w-auto sm:flex-row md:mt-4">
+
           <a
             href={googleCalendarUrl}
             target="_blank"
