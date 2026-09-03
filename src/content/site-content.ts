@@ -112,9 +112,16 @@ export const siteContent = {
     },
     // URL-urile rețelelor sociale
     social: [
-      { retea: "facebook" as const, label: "Facebook", url: "[ÎNLOCUIEȘTE]" },
-      { retea: "instagram" as const, label: "Instagram", url: "[ÎNLOCUIEȘTE]" },
-      { retea: "tiktok" as const, label: "TikTok", url: "[ÎNLOCUIEȘTE]" },
+      {
+        retea: "facebook" as const,
+        label: "Facebook",
+        url: "https://www.facebook.com/profile.php?id=61589313226881",
+      },
+      {
+        retea: "instagram" as const,
+        label: "Instagram",
+        url: "https://www.instagram.com/fundatiakogaion115?igsi=ZTBmcWF6aGoybXdk",
+      },
     ],
     subiecte: [
       "Informații generale",
