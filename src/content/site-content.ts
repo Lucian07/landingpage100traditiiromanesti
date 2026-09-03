@@ -5,6 +5,7 @@
  */
 
 import logoAsset from "@/assets/logo.png.asset.json";
+import despreAsset from "@/assets/despre.png.asset.json";
 
 export const siteContent = {
   brand: {
@@ -42,13 +43,13 @@ export const siteContent = {
   despre: {
     titlu: "Un târg cu rădăcini",
     paragrafe: [
-      "[ÎNLOCUIEȘTE] Descrie aici povestea târgului: cum a apărut, ce își propune și de ce contează pentru meșteșugarii și comunitățile din care vin.",
-      "[ÎNLOCUIEȘTE] Descrie aici Asociația Kogaion 115: misiunea, proiectele culturale și felul în care sprijină păstrarea tradițiilor românești.",
+      "Aici am nevoie de instrucțiuni de la doamna Ligia Marica despre istoria Târgului.",
     ],
-    // Înlocuiește cu o fotografie verticală (public/despre.jpg)
-    imagine: "/despre.jpg",
-    imagineAlt: "Meșteșugar lucrând la roata olarului în timpul târgului",
+    imagine: despreAsset.url,
+    imagineAlt:
+      "Stand tradițional „Mustărie” cu butoaie pictate, ștergare brodate, teasc de struguri și coșuri de nuiele",
   },
+
 
   atractii: {
     titlu: "Atracții principale",
