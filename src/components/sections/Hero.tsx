@@ -1,5 +1,6 @@
 import { CalendarDays, Clock } from "lucide-react";
 import bandaFoto from "@/assets/banda-foto.jpg";
+import { icsDataUrl, googleCalendarUrl } from "@/lib/calendar";
 
 /** Ornament folcloric de colț (triunghiuri, romburi, puncte). */
 function ColtOrnament({ className = "" }: { className?: string }) {
@@ -51,20 +52,8 @@ const iconiteFolclorice = [
   },
 ];
 
-/** Link Google Calendar cu data, ora și locația evenimentului. */
-const googleCalendarUrl = (() => {
-  const params = new URLSearchParams({
-    action: "TEMPLATE",
-    text: "Târgul 100 de Tradiții Românești",
-    // 18–20 septembrie 2026, 10:00–19:00 (ora României, UTC+3) în UTC
-    dates: "20260918T070000Z/20260920T160000Z",
-    location: "Muzeul Național al Țăranului Român, Str. Monetăriei 3, București",
-    details:
-      "Târg de tradiții, meșteșuguri și gastronomie românească, organizat de Asociația Kogaion 115. Intrarea este liberă. Program zilnic 10:00 – 19:00.",
-    ctz: "Europe/Bucharest",
-  });
-  return `https://calendar.google.com/calendar/render?${params.toString()}`;
-})();
+const icsHref = icsDataUrl();
+const gcalHref = googleCalendarUrl();
 
 export function Hero() {
 
@@ -161,23 +150,31 @@ export function Hero() {
 
 
         {/* Butoane */}
-        <div className="mt-7 flex w-full max-w-md flex-col gap-3 sm:w-auto sm:flex-row md:mt-4">
+        <div className="mt-7 flex w-full max-w-md flex-col items-center gap-3 sm:w-auto sm:flex-row md:mt-4">
 
           <a
-            href={googleCalendarUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex h-11 items-center justify-center rounded-md bg-brand px-6 text-sm font-semibold text-crem transition-colors hover:bg-brand/90"
+            href={icsHref}
+            download="targul-100-traditii-romanesti.ics"
+            className="inline-flex h-11 w-full items-center justify-center rounded-md bg-brand px-6 text-sm font-semibold text-crem transition-colors hover:bg-brand/90 sm:w-auto"
           >
             Adaugă în calendar
           </a>
           <a
             href="#atractii"
-            className="inline-flex h-11 items-center justify-center rounded-md border border-brand px-6 text-sm font-semibold text-brand transition-colors hover:bg-brand hover:text-crem"
+            className="inline-flex h-11 w-full items-center justify-center rounded-md border border-brand px-6 text-sm font-semibold text-brand transition-colors hover:bg-brand hover:text-crem sm:w-auto"
           >
             Vezi ce se întâmplă
           </a>
         </div>
+        <a
+          href={gcalHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-2 text-xs text-carbune/60 underline underline-offset-4 transition-colors hover:text-brand"
+        >
+          sau adaugă în Google Calendar
+        </a>
+
       </div>
 
       {/* Bandă foto */}
