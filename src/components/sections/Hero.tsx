@@ -103,24 +103,24 @@ export function Hero() {
       {/* Conținut central */}
       <div className="relative z-10 flex min-h-0 flex-1 flex-col items-center justify-center px-8 pt-12 pb-6 text-center sm:px-12 md:py-2">
         <h1 className="section-title text-carbune">
-          <span className="block text-[clamp(2.25rem,7vw,4.5rem)] leading-[1] font-black">
-            Târgul <span className="text-brand">100</span>
+          <span className="block text-[clamp(1.5rem,3.2vw,2.5rem)]">Târgul</span>
+          <span className="block text-[clamp(3.25rem,8vw,5.75rem)] leading-[0.92] font-black text-brand">
+            100
           </span>
-          <span className="mt-1 block text-[clamp(1.15rem,3.4vw,2.25rem)] leading-tight">
-            de Tradiții <span className="text-brand">Românești</span>
-          </span>
+          <span className="block text-[clamp(1.35rem,2.9vw,2.25rem)]">De Tradiții</span>
+          <span className="block text-[clamp(1.45rem,3.2vw,2.5rem)] text-brand">Românești</span>
           <span className="sr-only">Târgul 100 de Tradiții Românești</span>
         </h1>
 
         {/* Linie aurie cu romb */}
-        <div aria-hidden="true" className="mt-6 flex w-full max-w-md items-center gap-3 md:mt-4">
+        <div aria-hidden="true" className="mt-7 flex w-full max-w-md items-center gap-3 md:mt-4">
           <span className="h-px flex-1 bg-ocru/70" />
           <span className="h-2 w-2 rotate-45 bg-ocru" />
           <span className="h-px flex-1 bg-ocru/70" />
         </div>
 
-        {/* Data, ora și locația */}
-        <div className="mt-6 flex flex-col items-center gap-5 md:mt-4 md:flex-row md:gap-8">
+        {/* Data și programul */}
+        <div className="mt-7 flex items-stretch gap-6 sm:gap-10 md:mt-4">
           <div className="flex items-center gap-3">
             <CalendarDays className="h-6 w-6 text-brand" aria-hidden="true" />
             <div className="text-left">
@@ -130,7 +130,7 @@ export function Hero() {
               <p className="eyebrow mt-1">Septembrie</p>
             </div>
           </div>
-          <span aria-hidden="true" className="hidden w-px self-stretch bg-ocru/60 md:block" />
+          <span aria-hidden="true" className="w-px bg-ocru/60" />
           <div className="flex items-center gap-3">
             <Clock className="h-6 w-6 text-brand" aria-hidden="true" />
             <div className="text-left">
@@ -140,32 +140,33 @@ export function Hero() {
               <p className="eyebrow mt-1">Orele</p>
             </div>
           </div>
-          <span aria-hidden="true" className="hidden w-px self-stretch bg-ocru/60 md:block" />
-          <div className="flex items-start gap-3">
-            <MapPin className="mt-1 h-5 w-5 shrink-0 text-brand" aria-hidden="true" />
-            <p className="text-left">
-              <span className="block text-sm font-semibold tracking-[0.1em] text-carbune uppercase">
-                Muzeul Național al Țăranului Român
-              </span>
-              <span className="block text-sm text-carbune/70">Str. Monetăriei 3, București</span>
-            </p>
-          </div>
         </div>
 
-        {/* „Intrarea este gratuită” — accent tipografic, nu buton */}
-        <p className="mt-6 flex items-center justify-center gap-3 md:mt-4">
-          <span aria-hidden="true" className="text-base text-ocru">
+        {/* Plăcuța „intrarea este gratuită” */}
+        <div className="mt-7 flex items-center gap-3 rounded-xl bg-brand px-5 py-2 text-crem shadow-soft md:mt-4 md:px-6 md:py-2.5">
+          <span aria-hidden="true" className="text-sm text-ocru">
             ★
           </span>
-          <span className="text-[0.65rem] font-semibold tracking-[0.28em] text-carbune/70 uppercase">
-            Intrarea este
-          </span>
-          <span className="section-title text-xl text-brand sm:text-2xl">Gratuită!</span>
-          <span aria-hidden="true" className="text-base text-ocru">
+          <p className="leading-tight">
+            <span className="eyebrow block text-[0.6rem] text-crem/85">Intrarea este</span>
+            <span className="section-title block text-lg font-black sm:text-2xl">Gratuită!</span>
+          </p>
+          <span aria-hidden="true" className="text-sm text-ocru">
             ★
           </span>
-        </p>
+        </div>
 
+
+        {/* Locație */}
+        <div className="mt-7 flex items-start gap-2 md:mt-4">
+          <MapPin className="mt-1 h-4 w-4 shrink-0 text-brand" aria-hidden="true" />
+          <p className="text-left">
+            <span className="block text-sm font-semibold tracking-[0.12em] text-carbune uppercase sm:text-base">
+              Muzeul Național al Țăranului Român
+            </span>
+            <span className="block text-sm text-carbune/70">Str. Monetăriei 3, București</span>
+          </p>
+        </div>
 
         {/* Butoane */}
         <div className="mt-7 flex w-full max-w-md flex-col gap-3 sm:w-auto sm:flex-row md:mt-4">
