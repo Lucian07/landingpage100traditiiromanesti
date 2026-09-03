@@ -65,7 +65,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-svh flex-col overflow-hidden bg-crem pt-20 md:min-h-screen"
+      className="relative flex min-h-svh flex-col overflow-hidden bg-crem pt-20 md:h-svh"
     >
       {/* Grain subtil peste tot fundalul */}
       <svg
@@ -95,7 +95,7 @@ export function Hero() {
       </div>
 
       {/* Conținut central */}
-      <div className="relative z-10 flex flex-1 flex-col items-center justify-center px-8 pt-4 text-center sm:px-12">
+      <div className="relative z-10 flex min-h-0 flex-1 flex-col items-center justify-center px-8 py-2 text-center sm:px-12">
         <h1 className="section-title text-carbune">
           <span className="block text-[clamp(1.75rem,4.2vw,3.25rem)]">Târgul</span>
           <span className="block text-[clamp(3.5rem,11vw,7.5rem)] leading-[0.92] font-black text-brand">
@@ -137,7 +137,7 @@ export function Hero() {
         </div>
 
         {/* Plăcuța „intrarea este gratuită” */}
-        <div className="mt-5 flex items-center gap-4 rounded-xl bg-brand px-8 py-3 text-crem shadow-soft">
+        <div className="mt-4 flex items-center gap-4 rounded-xl bg-brand px-8 py-3 text-crem shadow-soft">
           <span aria-hidden="true" className="text-lg text-ocru">
             ★
           </span>
@@ -151,7 +151,7 @@ export function Hero() {
         </div>
 
         {/* Locație */}
-        <div className="mt-5 flex items-start gap-2">
+        <div className="mt-4 flex items-start gap-2">
           <MapPin className="mt-1 h-4 w-4 shrink-0 text-brand" aria-hidden="true" />
           <p className="text-left">
             <span className="block text-sm font-semibold tracking-[0.12em] text-carbune uppercase sm:text-base">
@@ -162,7 +162,7 @@ export function Hero() {
         </div>
 
         {/* Butoane */}
-        <div className="mt-5 flex w-full max-w-md flex-col gap-3 sm:w-auto sm:flex-row">
+        <div className="mt-4 flex w-full max-w-md flex-col gap-3 sm:w-auto sm:flex-row">
           <a
             href="#locatie"
             className="inline-flex h-11 items-center justify-center rounded-md bg-brand px-6 text-sm font-semibold text-crem transition-colors hover:bg-brand/90"
@@ -201,7 +201,7 @@ export function Hero() {
       </div>
 
       {/* Iconițe folclorice */}
-      <div className="relative z-10 shrink-0 px-10 pb-1">
+      <div className="relative z-10 shrink-0 px-10 pt-2 pb-1">
         <ul className="mx-auto grid max-w-4xl grid-cols-2 items-center gap-x-4 gap-y-3 md:flex md:justify-center md:gap-0">
           {iconiteFolclorice.map((item, i) => (
             <li key={item.label} className="flex items-center justify-center md:contents">
@@ -230,8 +230,8 @@ export function Hero() {
       </div>
 
       {/* Bandă ondulată */}
-      <div aria-hidden="true" className="relative z-10 shrink-0 px-6 pb-4">
-        <svg className="h-6 w-full" viewBox="0 0 240 24" preserveAspectRatio="none">
+      <div aria-hidden="true" className="relative z-10 shrink-0 px-6 pb-3">
+        <svg className="h-5 w-full" viewBox="0 0 240 24" preserveAspectRatio="none">
           <defs>
             <pattern id="hero-val" width="40" height="24" patternUnits="userSpaceOnUse">
               <path
