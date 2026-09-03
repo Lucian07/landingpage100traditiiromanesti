@@ -36,12 +36,22 @@ export function Locatie() {
           </ul>
 
 
-          <Button asChild className="mt-6">
-            <a href={locatie.linkHarta} target="_blank" rel="noopener noreferrer">
-              {locatie.butonHarta}
-              <ExternalLink className="ml-2 h-4 w-4" aria-hidden="true" />
+          <div className="mt-6 flex flex-col items-start gap-3 sm:flex-row">
+            <Button asChild>
+              <a href={locatie.linkHarta} target="_blank" rel="noopener noreferrer">
+                {locatie.butonHarta}
+                <ExternalLink className="ml-2 h-4 w-4" aria-hidden="true" />
+              </a>
+            </Button>
+            <a
+              href={icsHref}
+              download="targul-100-traditii-romanesti.ics"
+              className="inline-flex h-9 items-center justify-center rounded-md bg-brand px-6 text-sm font-semibold text-crem transition-colors hover:bg-brand/90"
+            >
+              Adaugă în calendar
             </a>
-          </Button>
+          </div>
+
         </Reveal>
 
         <Reveal delay={120}>
