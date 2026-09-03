@@ -1,24 +1,77 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { SiteHeader } from "@/components/sections/SiteHeader";
+import { Hero } from "@/components/sections/Hero";
+import { Despre } from "@/components/sections/Despre";
+import { Atractii } from "@/components/sections/Atractii";
+import { Galerie } from "@/components/sections/Galerie";
+import { Locatie } from "@/components/sections/Locatie";
+import { Contact } from "@/components/sections/Contact";
+import { SiteFooter } from "@/components/sections/SiteFooter";
+import { Ornament } from "@/components/Ornament";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const titlu = "Târgul 100 de Tradiții Românești · 18–20 septembrie 2026, București";
+const descriere =
+  "Trei zile de meșteșuguri vii, muzică populară, gastronomie tradițională și ateliere, la Muzeul Național al Țăranului Român. Eveniment organizat de Fundația Cogaion.";
+
+const eventJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Event",
+  name: "Târgul 100 de Tradiții Românești",
+  description: descriere,
+  startDate: "2026-09-18",
+  endDate: "2026-09-20",
+  eventStatus: "https://schema.org/EventScheduled",
+  eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+  location: {
+    "@type": "Place",
+    name: "Muzeul Național al Țăranului Român",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Str. Monetăriei 3",
+      addressLocality: "București",
+      addressRegion: "Sector 1",
+      addressCountry: "RO",
+    },
+  },
+  organizer: { "@type": "Organization", name: "Fundația Cogaion" },
+  image: "/hero.jpg",
+};
+
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: titlu },
+      { name: "description", content: descriere },
+      { property: "og:title", content: titlu },
+      { property: "og:description", content: descriere },
+      { property: "og:type", content: "website" },
+      { property: "og:image", content: "/hero.jpg" },
+      { property: "og:url", content: "/" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: titlu },
+      { name: "twitter:description", content: descriere },
+    ],
+    links: [{ rel: "canonical", href: "/" }],
+    scripts: [{ type: "application/ld+json", children: JSON.stringify(eventJsonLd) }],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen">
+      <SiteHeader />
+      <main>
+        <Hero />
+        <Despre />
+        <Ornament />
+        <Atractii />
+        <Galerie />
+        <Ornament />
+        <Locatie />
+        <Contact />
+      </main>
+      <SiteFooter />
     </div>
   );
 }
