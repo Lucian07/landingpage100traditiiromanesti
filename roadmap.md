@@ -8,3 +8,6 @@
 - [x] Aliniere vizuală la posterul încărcat: ramă decorativă cu motive populare
       în colțuri, bandă zigzag/romburi între secțiuni, titluri serif majuscule,
       accente cărămiziu + ocru pe fundal crem (fără informațiile din poster)
+- [x] Logo real în header/footer + favicon din logo
+- [x] Locație: cele trei intrări (Monetăriei 3, Ion Mihalache, Kiseleff 3),
+      program 10:00–19:00, intrare liberă; eliminate metrou/autobuz/parcare
