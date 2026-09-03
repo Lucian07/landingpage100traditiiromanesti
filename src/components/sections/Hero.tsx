@@ -1,4 +1,4 @@
-import { CalendarDays, Clock, MapPin } from "lucide-react";
+import { CalendarDays, Clock } from "lucide-react";
 import bandaFoto from "@/assets/banda-foto.jpg";
 
 /** Ornament folcloric de colț (triunghiuri, romburi, puncte). */
