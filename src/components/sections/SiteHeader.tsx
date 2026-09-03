@@ -32,13 +32,13 @@ export function SiteHeader() {
     >
       <div
         className={cn(
-          "relative mx-auto flex max-w-6xl items-center justify-between px-4 transition-[height] duration-300 ease-out sm:px-6",
-          scrolled ? "h-16" : "h-24",
+          "relative mx-auto flex max-w-6xl items-center justify-between px-4 sm:px-6",
+          scrolled ? "h-12" : "h-24",
         )}
       >
         <span
           className={cn(
-            "hidden font-serif text-lg font-semibold text-verde transition-opacity duration-300 sm:block",
+            "hidden font-serif text-lg font-semibold text-verde sm:block",
             scrolled ? "opacity-0" : "opacity-100",
           )}
         >
@@ -48,19 +48,17 @@ export function SiteHeader() {
         <a
           href="#top"
           className={cn(
-            "absolute top-1/2 -translate-y-1/2 rounded-lg transition-all duration-300 ease-out focus-visible:outline-2",
+            "absolute top-1/2 -translate-y-1/2 rounded-lg focus-visible:outline-2",
             scrolled ? "left-4 translate-x-0 sm:left-6" : "left-1/2 -translate-x-1/2",
           )}
         >
           <img
             src={siteContent.brand.logo}
             alt={siteContent.brand.logoAlt}
-            className={cn(
-              "w-auto transition-all duration-300 ease-out",
-              scrolled ? "h-11 sm:h-12" : "h-20 sm:h-24",
-            )}
+            className={cn("w-auto", scrolled ? "h-9 sm:h-10" : "h-20 sm:h-24")}
           />
         </a>
+
 
 
 
