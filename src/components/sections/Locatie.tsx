@@ -23,14 +23,15 @@ export function Locatie() {
             </p>
           </div>
 
-          <ul className="mt-8 space-y-4">
+          <ul className="mt-5 space-y-1.5 pl-8">
             {locatie.info.map((item) => (
-              <li key={item.titlu} className="rounded-lg border border-border bg-card p-4">
-                <p className="text-sm font-semibold text-verde">{item.titlu}</p>
-                <p className="mt-1 text-sm text-muted-foreground">{item.text}</p>
+              <li key={item.titlu} className="text-sm">
+                <span className="font-semibold text-verde">{item.titlu}: </span>
+                <span className="text-muted-foreground">{item.text}</span>
               </li>
             ))}
           </ul>
+
 
           <Button asChild className="mt-8">
             <a href={locatie.linkHarta} target="_blank" rel="noopener noreferrer">
