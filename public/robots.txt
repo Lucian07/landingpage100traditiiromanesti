@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://traditii-romania-landing.lovable.app/sitemap.xml
