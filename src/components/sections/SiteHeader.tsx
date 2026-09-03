@@ -86,7 +86,8 @@ export function SiteHeader() {
             aria-expanded={open}
             onClick={() => setOpen(true)}
             className={cn(
-              "inline-flex h-11 w-11 items-center justify-center rounded-lg md:hidden",
+              "inline-flex w-11 items-center justify-center rounded-lg md:hidden",
+              scrolled ? "h-10" : "h-11",
               "text-carbune",
             )}
           >
