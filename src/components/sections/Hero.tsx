@@ -19,11 +19,19 @@ export function Hero() {
       />
 
       <div className="relative mx-auto w-full max-w-6xl px-4 pt-32 pb-16 sm:px-6 md:pb-24">
-        <h1 className="max-w-3xl font-serif text-4xl leading-tight font-bold text-crem sm:text-5xl md:text-6xl">
-          {hero.titlu}
+        {/* Titlu în spiritul posterului: majuscule, serif, „100" accentuat */}
+        <h1 className="section-title max-w-3xl text-crem">
+          <span className="block text-3xl sm:text-4xl md:text-5xl">Târgul</span>
+          <span className="block text-6xl leading-none text-ocru sm:text-7xl md:text-8xl">100</span>
+          <span className="block text-2xl sm:text-3xl md:text-4xl">de Tradiții</span>
+          <span className="block text-3xl text-ocru sm:text-4xl md:text-5xl">Românești</span>
+          <span className="sr-only">{hero.titlu}</span>
         </h1>
-        <p className="mt-5 max-w-2xl text-base font-medium text-ocru sm:text-lg">{hero.subtitlu}</p>
+        <p className="mt-6 max-w-2xl text-base font-medium tracking-wide text-crem sm:text-lg">
+          {hero.subtitlu}
+        </p>
         <p className="mt-4 max-w-xl text-sm text-crem/85 sm:text-base">{hero.paragraf}</p>
+
 
         <div className="mt-8 flex flex-wrap gap-3">
           <Button asChild size="lg">
