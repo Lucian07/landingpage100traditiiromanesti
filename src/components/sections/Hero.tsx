@@ -6,7 +6,7 @@ export function Hero() {
   const { hero } = siteContent;
 
   return (
-    <section id="top" className="relative flex min-h-[85vh] items-end overflow-hidden">
+    <section id="top" className="relative flex min-h-[85vh] items-end overflow-hidden bg-carbune">
       {/* Înlocuiește cu fotografia de la ediția anterioară */}
       <img
         src={hero.imagine}
