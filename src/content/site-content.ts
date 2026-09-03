@@ -107,8 +107,8 @@ export const siteContent = {
     succes: "Mulțumim! Revenim cu un răspuns în cel mai scurt timp.",
     dateContact: {
       titlu: "Date de contact",
-      email: "[ÎNLOCUIEȘTE]@cogaion.ro",
-      telefon: "+40 700 000 000",
+      email: "ligia_marica@yahoo.com",
+      telefon: "0722 274 803",
     },
     // URL-urile rețelelor sociale
     social: [
