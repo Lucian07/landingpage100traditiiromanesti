@@ -91,7 +91,7 @@ export function Galerie() {
               >
                 <ChevronRight className="h-6 w-6" />
               </button>
-              <p className="mt-3 text-center text-sm text-crem/80">{activ.alt}</p>
+              {activ.alt && <p className="mt-3 text-center text-sm text-crem/80">{activ.alt}</p>}
             </div>
           )}
         </DialogContent>
