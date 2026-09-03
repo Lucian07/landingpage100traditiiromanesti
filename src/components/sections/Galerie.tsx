@@ -24,7 +24,6 @@ const galleryImages = [
   { src: bucateAsset.url, alt: "Bucate tradiționale" },
   { src: standAsset.url, alt: "Stand cu bucate tradiționale" },
   { src: papusiAsset.url, alt: "" },
-  ];
 ];
 
 export function Galerie() {
