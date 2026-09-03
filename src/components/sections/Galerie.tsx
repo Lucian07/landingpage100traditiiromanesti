@@ -24,7 +24,7 @@ const galleryImages = [
   { src: bucateAsset.url, alt: "Bucate tradiționale" },
   { src: standAsset.url, alt: "Stand cu bucate tradiționale" },
   { src: papusiAsset.url, alt: "" },
-  { src: "/galerie-8.jpg", alt: "Vizitatori plimbându-se printre standurile târgului" },
+  ];
 ];
 
 export function Galerie() {
