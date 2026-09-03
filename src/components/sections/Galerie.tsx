@@ -6,6 +6,7 @@ import { siteContent } from "@/content/site-content";
 import tesatoareAsset from "@/assets/galerie-tesatoare.jpg.asset.json";
 import bucateAsset from "@/assets/galerie-bucate.jpg.asset.json";
 import iiAsset from "@/assets/galerie-ii.jpg.asset.json";
+import bucate2Asset from "@/assets/galerie-bucate2.jpg.asset.json";
 
 /**
  * TOATE imaginile galeriei sunt definite aici, într-un singur array.
@@ -15,7 +16,7 @@ import iiAsset from "@/assets/galerie-ii.jpg.asset.json";
 const galleryImages = [
   { src: iiAsset.url, alt: "Ii tradiționale românești" },
   { src: tesatoareAsset.url, alt: "Țesătoare lucrând la război de țesut" },
-  { src: "/galerie-3.jpg", alt: "Ansamblu folcloric dansând pe scena târgului" },
+  { src: bucate2Asset.url, alt: "Bucate tradiționale" },
   { src: bucateAsset.url, alt: "Bucate tradiționale" },
   { src: "/galerie-5.jpg", alt: "Copii participând la un atelier de încondeiat ouă" },
   { src: "/galerie-6.jpg", alt: "Stand cu textile și cusături tradiționale" },
