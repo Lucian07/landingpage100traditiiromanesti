@@ -97,12 +97,12 @@ export function Hero() {
       {/* Conținut central */}
       <div className="relative z-10 flex min-h-0 flex-1 flex-col items-center justify-center px-8 py-2 text-center sm:px-12">
         <h1 className="section-title text-carbune">
-          <span className="block text-[clamp(1.75rem,4.2vw,3.25rem)]">Târgul</span>
-          <span className="block text-[clamp(3.5rem,11vw,7.5rem)] leading-[0.92] font-black text-brand">
+          <span className="block text-[clamp(1.5rem,3.2vw,2.5rem)]">Târgul</span>
+          <span className="block text-[clamp(3.25rem,8vw,5.75rem)] leading-[0.92] font-black text-brand">
             100
           </span>
-          <span className="block text-[clamp(1.5rem,3.8vw,3rem)]">De Tradiții</span>
-          <span className="block text-[clamp(1.6rem,4.2vw,3.25rem)] text-brand">Românești</span>
+          <span className="block text-[clamp(1.35rem,2.9vw,2.25rem)]">De Tradiții</span>
+          <span className="block text-[clamp(1.45rem,3.2vw,2.5rem)] text-brand">Românești</span>
           <span className="sr-only">Târgul 100 de Tradiții Românești</span>
         </h1>
 
