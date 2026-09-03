@@ -5,6 +5,7 @@
  */
 
 import logoAsset from "@/assets/logo.png.asset.json";
+import despreAsset from "@/assets/despre.png.asset.json";
 
 export const siteContent = {
   brand: {
