@@ -4,13 +4,14 @@
  * componentele din src/components/sections/ citesc de aici.
  */
 
+import logoAsset from "@/assets/logo.png.asset.json";
+
 export const siteContent = {
   brand: {
     numeEveniment: "Târgul 100 de Tradiții Românești",
     fundatie: "Fundația Cogaion",
-    // Înlocuiește /logo.png cu logo-ul real al fundației (public/logo.png)
-    logo: "/logo.png",
-    logoAlt: "Fundația Cogaion",
+    logo: logoAsset.url,
+    logoAlt: "Târgul 100 de Tradiții Românești",
   },
 
   nav: [
@@ -33,8 +34,8 @@ export const siteContent = {
     butonSecundar: "Cum ajungi",
     micro: {
       data: "18–20 septembrie",
-      adresa: "Str. Monetăriei 3, București",
-      program: "[ÎNLOCUIEȘTE] 10:00 – 20:00",
+      adresa: "În curtea Muzeului Național al Țăranului Român, Str. Monetăriei 3, București",
+      program: "10:00 – 19:00",
     },
   },
 
@@ -102,12 +103,14 @@ export const siteContent = {
   locatie: {
     titlu: "Locație",
     subtitlu: "Te așteptăm în inima Bucureștiului.",
-    numeLoc: "Muzeul Național al Țăranului Român",
-    adresa: "Str. Monetăriei 3, Sector 1, București",
+    numeLoc: "Curtea Muzeului Național al Țăranului Român",
+    adresa: "Sector 1, București",
     info: [
-      { titlu: "Cu metroul", text: "Stația Piața Victoriei" },
-      { titlu: "Cu autobuzul", text: "[ÎNLOCUIEȘTE]" },
-      { titlu: "Parcare", text: "[ÎNLOCUIEȘTE]" },
+      { titlu: "Intrarea 1", text: "Str. Monetăriei nr. 3" },
+      { titlu: "Intrarea 2", text: "Bd. Ion Mihalache" },
+      { titlu: "Intrarea 3", text: "Șos. Kiseleff nr. 3" },
+      { titlu: "Program", text: "18 – 20 septembrie · 10:00 – 19:00" },
+      { titlu: "Acces", text: "Intrarea este LIBERĂ!" },
     ],
     butonHarta: "Deschide în Google Maps",
     linkHarta:
