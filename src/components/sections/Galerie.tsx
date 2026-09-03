@@ -9,6 +9,7 @@ import iiAsset from "@/assets/galerie-ii.jpg.asset.json";
 import bucate2Asset from "@/assets/galerie-bucate2.jpg.asset.json";
 import standAsset from "@/assets/galerie-stand.jpg.asset.json";
 import atelierAsset from "@/assets/galerie-atelier.jpg.asset.json";
+import papusiAsset from "@/assets/galerie-papusi.jpg.asset.json";
 
 /**
  * TOATE imaginile galeriei sunt definite aici, într-un singur array.
