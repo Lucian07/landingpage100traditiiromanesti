@@ -103,8 +103,8 @@ export const siteContent = {
   locatie: {
     titlu: "Locație",
     subtitlu: "Te așteptăm în inima Bucureștiului.",
-    numeLoc: "Muzeul Național al Țăranului Român",
-    adresa: "Str. Monetăriei 3, Sector 1, București",
+    numeLoc: "În curtea Muzeului Național al Țăranului Român",
+    adresa: "Str. Monetăriei 3, Sector 1, București · 10:00 – 19:00",
     info: [
       { titlu: "Cu metroul", text: "Stația Piața Victoriei" },
       { titlu: "Cu autobuzul", text: "[ÎNLOCUIEȘTE]" },
