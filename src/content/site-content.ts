@@ -60,40 +60,21 @@ export const siteContent = {
       {
         icon: "hammer",
         titlu: "Meșteșugari la lucru",
-        descriere:
-          "[ÎNLOCUIEȘTE] Olari, țesătoare, cojocari și fierari care lucrează în fața publicului.",
-      },
-      {
-        icon: "palette",
-        titlu: "Ateliere pentru toți",
-        descriere:
-          "[ÎNLOCUIEȘTE] Sesiuni practice de olărit, încondeiat și țesut, pentru copii și adulți.",
-      },
-      {
-        icon: "music",
-        titlu: "Muzică și dans popular",
-        descriere:
-          "[ÎNLOCUIEȘTE] Spectacole live cu ansambluri folclorice din mai multe zone etnografice.",
+        descriere: "Olari, țesătoare, cojocari și fierari care lucrează în fața publicului.",
       },
       {
         icon: "utensils",
         titlu: "Gastronomie tradițională",
-        descriere:
-          "[ÎNLOCUIEȘTE] Bucate gătite pe loc, după rețete de familie, din produse locale.",
-      },
-      {
-        icon: "baby",
-        titlu: "Zona copiilor",
-        descriere:
-          "[ÎNLOCUIEȘTE] Jocuri de altădată, povești și activități creative supravegheate.",
+        descriere: "Bucate gătite pe loc, după rețete de familie, din produse locale.",
       },
       {
         icon: "basket",
         titlu: "Produse de la producători",
         descriere:
-          "[ÎNLOCUIEȘTE] Miere, brânzeturi, țuică, textile și obiecte lucrate manual, direct de la producători.",
+          "Miere, brânzeturi, țuică, textile și obiecte lucrate manual, direct de la producători.",
       },
     ],
+
   },
 
   galerie: {
