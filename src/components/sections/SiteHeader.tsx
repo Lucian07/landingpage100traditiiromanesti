@@ -30,21 +30,38 @@ export function SiteHeader() {
         scrolled ? "bg-crem/95 shadow-soft backdrop-blur" : "bg-transparent",
       )}
     >
-      <div className="relative mx-auto flex h-24 max-w-6xl items-center justify-between px-4 sm:px-6">
-        <span className="hidden font-serif text-lg font-semibold text-verde sm:block">
+      <div
+        className={cn(
+          "relative mx-auto flex max-w-6xl items-center justify-between px-4 transition-[height] duration-300 ease-out sm:px-6",
+          scrolled ? "h-16" : "h-24",
+        )}
+      >
+        <span
+          className={cn(
+            "hidden font-serif text-lg font-semibold text-verde transition-opacity duration-300 sm:block",
+            scrolled ? "opacity-0" : "opacity-100",
+          )}
+        >
           {siteContent.brand.fundatie}
         </span>
 
         <a
           href="#top"
-          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg focus-visible:outline-2"
+          className={cn(
+            "absolute top-1/2 -translate-y-1/2 rounded-lg transition-all duration-300 ease-out focus-visible:outline-2",
+            scrolled ? "left-4 translate-x-0 sm:left-6" : "left-1/2 -translate-x-1/2",
+          )}
         >
           <img
             src={siteContent.brand.logo}
             alt={siteContent.brand.logoAlt}
-            className="h-20 w-auto sm:h-24"
+            className={cn(
+              "w-auto transition-all duration-300 ease-out",
+              scrolled ? "h-11 sm:h-12" : "h-20 sm:h-24",
+            )}
           />
         </a>
+
 
 
         <div className="ml-auto flex items-center gap-4 lg:gap-6">
