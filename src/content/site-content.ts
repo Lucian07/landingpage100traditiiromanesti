@@ -103,12 +103,14 @@ export const siteContent = {
   locatie: {
     titlu: "Locație",
     subtitlu: "Te așteptăm în inima Bucureștiului.",
-    numeLoc: "În curtea Muzeului Național al Țăranului Român",
-    adresa: "Str. Monetăriei 3, Sector 1, București · 10:00 – 19:00",
+    numeLoc: "Curtea Muzeului Național al Țăranului Român",
+    adresa: "Sector 1, București",
     info: [
-      { titlu: "Cu metroul", text: "Stația Piața Victoriei" },
-      { titlu: "Cu autobuzul", text: "[ÎNLOCUIEȘTE]" },
-      { titlu: "Parcare", text: "[ÎNLOCUIEȘTE]" },
+      { titlu: "Intrarea 1", text: "Str. Monetăriei nr. 3" },
+      { titlu: "Intrarea 2", text: "Bd. Ion Mihalache" },
+      { titlu: "Intrarea 3", text: "Șos. Kiseleff nr. 3" },
+      { titlu: "Program", text: "18 – 20 septembrie · 10:00 – 19:00" },
+      { titlu: "Acces", text: "Intrarea este LIBERĂ!" },
     ],
     butonHarta: "Deschide în Google Maps",
     linkHarta:
