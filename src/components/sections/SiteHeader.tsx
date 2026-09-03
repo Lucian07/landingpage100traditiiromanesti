@@ -86,7 +86,7 @@ export function SiteHeader() {
 
       {/* Drawer full-screen pe mobil — în afara header-ului, ca backdrop-blur să nu îl limiteze */}
       {open && (
-        <div className="fixed inset-0 z-50 flex flex-col bg-crem md:hidden">
+        <div className="fixed inset-0 z-[60] flex flex-col bg-crem md:hidden">
           <div className="flex h-20 items-center justify-between px-4">
             <span className="font-serif text-lg font-semibold text-verde">
               {siteContent.brand.fundatie}
