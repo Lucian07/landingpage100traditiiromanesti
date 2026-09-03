@@ -4,6 +4,8 @@
  * componentele din src/components/sections/ citesc de aici.
  */
 
+import logoAsset from "@/assets/logo.png.asset.json";
+
 export const siteContent = {
   brand: {
     numeEveniment: "Târgul 100 de Tradiții Românești",
@@ -32,8 +34,8 @@ export const siteContent = {
     butonSecundar: "Cum ajungi",
     micro: {
       data: "18–20 septembrie",
-      adresa: "Str. Monetăriei 3, București",
-      program: "[ÎNLOCUIEȘTE] 10:00 – 20:00",
+      adresa: "În curtea Muzeului Național al Țăranului Român, Str. Monetăriei 3, București",
+      program: "10:00 – 19:00",
     },
   },
 
