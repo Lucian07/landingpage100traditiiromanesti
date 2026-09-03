@@ -40,7 +40,7 @@ export function SiteHeader() {
           <span
             className={cn(
               "hidden font-serif text-lg font-semibold sm:block",
-              "text-carbune",
+              "text-verde",
             )}
           >
             {siteContent.brand.fundatie}
@@ -85,7 +85,7 @@ export function SiteHeader() {
       {open && (
         <div className="fixed inset-0 z-50 flex flex-col bg-crem md:hidden">
           <div className="flex h-20 items-center justify-between px-4">
-            <span className="font-serif text-lg font-semibold text-carbune">
+            <span className="font-serif text-lg font-semibold text-verde">
               {siteContent.brand.fundatie}
             </span>
             <button

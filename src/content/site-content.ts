@@ -9,7 +9,7 @@ import logoAsset from "@/assets/logo.png.asset.json";
 export const siteContent = {
   brand: {
     numeEveniment: "Târgul 100 de Tradiții Românești",
-    fundatie: "Fundația Cogaion",
+    fundatie: "Asociația Kogaion 115",
     logo: logoAsset.url,
     logoAlt: "Târgul 100 de Tradiții Românești",
   },
@@ -43,7 +43,7 @@ export const siteContent = {
     titlu: "Un târg cu rădăcini",
     paragrafe: [
       "[ÎNLOCUIEȘTE] Descrie aici povestea târgului: cum a apărut, ce își propune și de ce contează pentru meșteșugarii și comunitățile din care vin.",
-      "[ÎNLOCUIEȘTE] Descrie aici Fundația Cogaion: misiunea, proiectele culturale și felul în care sprijină păstrarea tradițiilor românești.",
+      "[ÎNLOCUIEȘTE] Descrie aici Asociația Kogaion 115: misiunea, proiectele culturale și felul în care sprijină păstrarea tradițiilor românești.",
     ],
     // Înlocuiește cu o fotografie verticală (public/despre.jpg)
     imagine: "/despre.jpg",
@@ -143,7 +143,7 @@ export const siteContent = {
   },
 
   footer: {
-    copyright: "© 2026 Fundația Cogaion",
+    copyright: "© 2026 Asociația Kogaion 115",
   },
 };
 

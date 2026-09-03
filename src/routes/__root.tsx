@@ -82,9 +82,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Târg de tradiții, meșteșuguri și gastronomie românească, organizat de Fundația Cogaion.",
+          "Târg de tradiții, meșteșuguri și gastronomie românească, organizat de Asociația Kogaion 115.",
       },
-      { name: "author", content: "Fundația Cogaion" },
+      { name: "author", content: "Asociația Kogaion 115" },
       { property: "og:site_name", content: "Târgul 100 de Tradiții Românești" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

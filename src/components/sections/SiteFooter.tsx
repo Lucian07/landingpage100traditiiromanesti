@@ -10,7 +10,7 @@ export function SiteFooter() {
         <div className="flex items-center gap-3">
           {/* Placeholder logo — înlocuiește public/logo.png */}
           <img src={siteContent.brand.logo} alt={siteContent.brand.logoAlt} className="h-8 w-auto" />
-          <span className="font-serif text-lg">{siteContent.brand.fundatie}</span>
+          <span className="font-serif text-lg text-[oklch(0.75_0.09_141.6)]">{siteContent.brand.fundatie}</span>
         </div>
 
         <nav aria-label="Navigare footer" className="flex flex-wrap justify-center gap-x-6 gap-y-2">

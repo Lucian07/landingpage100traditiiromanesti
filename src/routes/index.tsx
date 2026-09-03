@@ -11,7 +11,7 @@ import { Ornament } from "@/components/Ornament";
 
 const titlu = "Târgul 100 de Tradiții Românești · 18–20 septembrie 2026, București";
 const descriere =
-  "Trei zile de meșteșuguri vii, muzică populară, gastronomie tradițională și ateliere, la Muzeul Național al Țăranului Român. Eveniment organizat de Fundația Cogaion.";
+  "Trei zile de meșteșuguri vii, muzică populară, gastronomie tradițională și ateliere, la Muzeul Național al Țăranului Român. Eveniment organizat de Asociația Kogaion 115.";
 
 const eventJsonLd = {
   "@context": "https://schema.org",
@@ -33,7 +33,7 @@ const eventJsonLd = {
       addressCountry: "RO",
     },
   },
-  organizer: { "@type": "Organization", name: "Fundația Cogaion" },
+  organizer: { "@type": "Organization", name: "Asociația Kogaion 115" },
   image: "/hero.jpg",
 };
 
