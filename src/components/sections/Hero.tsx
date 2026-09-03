@@ -53,7 +53,6 @@ const iconiteFolclorice = [
 ];
 
 const icsHref = icsDataUrl();
-const gcalHref = googleCalendarUrl();
 
 export function Hero() {
 
