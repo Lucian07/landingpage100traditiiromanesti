@@ -153,3 +153,21 @@
     scroll-behavior: auto;
   }
 }
+
+/* Titluri de secțiune în spiritul posterului: serif, majuscule, tracking larg */
+@utility eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-brand);
+}
+
+@utility section-title {
+  font-family: var(--font-serif);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 1.05;
+}
