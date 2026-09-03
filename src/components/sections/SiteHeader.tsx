@@ -30,41 +30,39 @@ export function SiteHeader() {
         scrolled ? "bg-crem/95 shadow-soft backdrop-blur" : "bg-transparent",
       )}
     >
-      <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-4 sm:px-6">
-        <a href="#top" className="flex items-center gap-3 rounded-lg focus-visible:outline-2">
-          {/* Placeholder logo — înlocuiește public/logo.png cu logo-ul real */}
+      <div className="relative mx-auto flex h-24 max-w-6xl items-center justify-between px-4 sm:px-6">
+        <span className="hidden font-serif text-lg font-semibold text-verde sm:block">
+          {siteContent.brand.fundatie}
+        </span>
+
+        <a
+          href="#top"
+          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg focus-visible:outline-2"
+        >
           <img
             src={siteContent.brand.logo}
             alt={siteContent.brand.logoAlt}
-            className="h-14 w-auto sm:h-16"
+            className="h-20 w-auto sm:h-24"
           />
-          <span
-            className={cn(
-              "hidden font-serif text-lg font-semibold sm:block",
-              "text-verde",
-            )}
-          >
-            {siteContent.brand.fundatie}
-          </span>
         </a>
 
-        <nav aria-label="Navigare principală" className="hidden items-center gap-8 md:flex">
-          {siteContent.nav.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className={cn(
-                "text-sm font-medium transition-colors hover:text-ocru",
-                "text-carbune",
-              )}
-            >
-              {item.label}
-            </a>
-          ))}
-        </nav>
 
-        <div className="flex items-center gap-2">
-          <Button asChild className="hidden sm:inline-flex">
+        <div className="ml-auto flex items-center gap-4 lg:gap-6">
+          <nav aria-label="Navigare principală" className="hidden items-center gap-6 md:flex">
+            {siteContent.nav.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                className={cn(
+                  "text-sm font-medium transition-colors hover:text-ocru",
+                  "text-carbune",
+                )}
+              >
+                {item.label}
+              </a>
+            ))}
+          </nav>
+          <Button asChild className="hidden lg:inline-flex">
             <a href="#locatie">Vezi locația</a>
           </Button>
           <button
