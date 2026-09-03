@@ -166,14 +166,6 @@ export function Hero() {
             Vezi ce se întâmplă
           </a>
         </div>
-        <a
-          href={gcalHref}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-2 text-xs text-carbune/60 underline underline-offset-4 transition-colors hover:text-brand"
-        >
-          sau adaugă în Google Calendar
-        </a>
 
       </div>
 
