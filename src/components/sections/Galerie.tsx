@@ -22,7 +22,7 @@ const galleryImages = [
   { src: bucate2Asset.url, alt: "Bucate tradiționale" },
   { src: bucateAsset.url, alt: "Bucate tradiționale" },
   { src: standAsset.url, alt: "Stand cu bucate tradiționale" },
-  { src: "/galerie-7.jpg", alt: "Fierar lucrând la nicovală în fața publicului" },
+  { src: papusiAsset.url, alt: "" },
   { src: "/galerie-8.jpg", alt: "Vizitatori plimbându-se printre standurile târgului" },
 ];
 
