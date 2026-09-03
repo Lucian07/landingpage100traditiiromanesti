@@ -47,23 +47,22 @@ export function SiteHeader() {
         </a>
 
 
-        <nav aria-label="Navigare principală" className="hidden items-center gap-8 md:flex">
-          {siteContent.nav.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className={cn(
-                "text-sm font-medium transition-colors hover:text-ocru",
-                "text-carbune",
-              )}
-            >
-              {item.label}
-            </a>
-          ))}
-        </nav>
-
-        <div className="flex items-center gap-2">
-          <Button asChild className="hidden sm:inline-flex">
+        <div className="ml-auto flex items-center gap-4 lg:gap-6">
+          <nav aria-label="Navigare principală" className="hidden items-center gap-6 md:flex">
+            {siteContent.nav.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                className={cn(
+                  "text-sm font-medium transition-colors hover:text-ocru",
+                  "text-carbune",
+                )}
+              >
+                {item.label}
+              </a>
+            ))}
+          </nav>
+          <Button asChild className="hidden lg:inline-flex">
             <a href="#locatie">Vezi locația</a>
           </Button>
           <button
