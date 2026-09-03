@@ -71,7 +71,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-svh flex-col overflow-hidden bg-crem pt-20 md:h-svh"
+      className="relative flex min-h-svh flex-col overflow-hidden bg-crem pt-24 md:h-svh"
     >
       {/* Grain subtil peste tot fundalul */}
       <svg
@@ -87,13 +87,13 @@ export function Hero() {
       {/* Ramă dublă: bordură roșie + linie aurie interioară */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute top-20 right-2 bottom-2 left-2 z-20 border-[3px] border-brand sm:right-3 sm:bottom-3 sm:left-3"
+        className="pointer-events-none absolute top-24 right-2 bottom-2 left-2 z-20 border-[3px] border-brand sm:right-3 sm:bottom-3 sm:left-3"
       >
         <div className="absolute inset-[6px] border border-ocru/70" />
       </div>
 
       {/* Ornamente în cele 4 colțuri */}
-      <div aria-hidden="true" className="pointer-events-none absolute top-20 right-2 bottom-2 left-2 z-20 sm:right-3 sm:bottom-3 sm:left-3">
+      <div aria-hidden="true" className="pointer-events-none absolute top-24 right-2 bottom-2 left-2 z-20 sm:right-3 sm:bottom-3 sm:left-3">
         <ColtOrnament className="absolute top-1 left-1 h-14 w-14 sm:h-20 sm:w-20" />
         <ColtOrnament className="absolute top-1 right-1 h-14 w-14 scale-x-[-1] sm:h-20 sm:w-20" />
         <ColtOrnament className="absolute bottom-1 left-1 h-14 w-14 scale-y-[-1] sm:h-20 sm:w-20" />
