@@ -1,5 +1,6 @@
 import { CalendarDays, Clock } from "lucide-react";
 import bandaFoto from "@/assets/banda-foto.jpg";
+import { icsDataUrl, googleCalendarUrl } from "@/lib/calendar";
 
 /** Ornament folcloric de colț (triunghiuri, romburi, puncte). */
 function ColtOrnament({ className = "" }: { className?: string }) {
