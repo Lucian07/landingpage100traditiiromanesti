@@ -101,7 +101,7 @@ export function Hero() {
       </div>
 
       {/* Conținut central */}
-      <div className="relative z-10 flex min-h-0 flex-1 flex-col items-center justify-center px-8 py-2 text-center sm:px-12">
+      <div className="relative z-10 flex min-h-0 flex-1 flex-col items-center justify-center px-8 pt-12 pb-6 text-center sm:px-12 md:py-2">
         <h1 className="section-title text-carbune">
           <span className="block text-[clamp(1.5rem,3.2vw,2.5rem)]">Târgul</span>
           <span className="block text-[clamp(3.25rem,8vw,5.75rem)] leading-[0.92] font-black text-brand">
@@ -113,14 +113,14 @@ export function Hero() {
         </h1>
 
         {/* Linie aurie cu romb */}
-        <div aria-hidden="true" className="mt-4 flex w-full max-w-md items-center gap-3">
+        <div aria-hidden="true" className="mt-7 flex w-full max-w-md items-center gap-3 md:mt-4">
           <span className="h-px flex-1 bg-ocru/70" />
           <span className="h-2 w-2 rotate-45 bg-ocru" />
           <span className="h-px flex-1 bg-ocru/70" />
         </div>
 
         {/* Data și programul */}
-        <div className="mt-4 flex items-stretch gap-6 sm:gap-10">
+        <div className="mt-7 flex items-stretch gap-6 sm:gap-10 md:mt-4">
           <div className="flex items-center gap-3">
             <CalendarDays className="h-6 w-6 text-brand" aria-hidden="true" />
             <div className="text-left">
@@ -143,18 +143,19 @@ export function Hero() {
         </div>
 
         {/* Plăcuța „intrarea este gratuită” */}
-        <div className="mt-4 flex items-center gap-4 rounded-xl bg-brand px-8 py-3 text-crem shadow-soft">
-          <span aria-hidden="true" className="text-lg text-ocru">
+        <div className="mt-7 flex items-center gap-3 rounded-xl bg-brand px-5 py-2 text-crem shadow-soft md:mt-4 md:px-6 md:py-2.5">
+          <span aria-hidden="true" className="text-sm text-ocru">
             ★
           </span>
           <p className="leading-tight">
-            <span className="eyebrow block text-crem/85">Intrarea este</span>
-            <span className="section-title block text-2xl font-black sm:text-3xl">Gratuită!</span>
+            <span className="eyebrow block text-[0.6rem] text-crem/85">Intrarea este</span>
+            <span className="section-title block text-lg font-black sm:text-2xl">Gratuită!</span>
           </p>
-          <span aria-hidden="true" className="text-lg text-ocru">
+          <span aria-hidden="true" className="text-sm text-ocru">
             ★
           </span>
         </div>
+
 
         {/* Locație */}
         <div className="mt-4 flex items-start gap-2">
