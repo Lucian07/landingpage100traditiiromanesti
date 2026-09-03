@@ -119,29 +119,6 @@ export function Hero() {
           <span className="h-px flex-1 bg-ocru/70" />
         </div>
 
-        {/* Data și programul */}
-        <div className="mt-7 flex items-stretch gap-6 sm:gap-10 md:mt-4">
-          <div className="flex items-center gap-3">
-            <CalendarDays className="h-6 w-6 text-brand" aria-hidden="true" />
-            <div className="text-left">
-              <p className="font-serif text-2xl leading-none font-bold text-carbune sm:text-3xl">
-                18–20
-              </p>
-              <p className="eyebrow mt-1">Septembrie</p>
-            </div>
-          </div>
-          <span aria-hidden="true" className="w-px bg-ocru/60" />
-          <div className="flex items-center gap-3">
-            <Clock className="h-6 w-6 text-brand" aria-hidden="true" />
-            <div className="text-left">
-              <p className="font-serif text-2xl leading-none font-bold text-carbune sm:text-3xl">
-                10–19
-              </p>
-              <p className="eyebrow mt-1">Orele</p>
-            </div>
-          </div>
-        </div>
-
         {/* Plăcuța „intrarea este gratuită” */}
         <div className="mt-7 flex items-center gap-3 rounded-xl bg-brand px-5 py-2 text-crem shadow-soft md:mt-4 md:px-6 md:py-2.5">
           <span aria-hidden="true" className="text-sm text-ocru">
@@ -156,17 +133,48 @@ export function Hero() {
           </span>
         </div>
 
+        {/* Card comun: data, ora și locația */}
+        <div className="mt-7 w-full max-w-lg rounded-xl border border-ocru/60 bg-crem-dark/40 px-5 py-4 md:mt-4 md:py-3">
+          <div className="flex items-stretch justify-center gap-6 sm:gap-10">
+            <div className="flex items-center gap-3">
+              <CalendarDays className="h-6 w-6 text-brand" aria-hidden="true" />
+              <div className="text-left">
+                <p className="font-serif text-2xl leading-none font-bold text-carbune sm:text-3xl">
+                  18–20
+                </p>
+                <p className="eyebrow mt-1">Septembrie</p>
+              </div>
+            </div>
+            <span aria-hidden="true" className="w-px bg-ocru/60" />
+            <div className="flex items-center gap-3">
+              <Clock className="h-6 w-6 text-brand" aria-hidden="true" />
+              <div className="text-left">
+                <p className="font-serif text-2xl leading-none font-bold text-carbune sm:text-3xl">
+                  10–19
+                </p>
+                <p className="eyebrow mt-1">Orele</p>
+              </div>
+            </div>
+          </div>
 
-        {/* Locație */}
-        <div className="mt-7 flex items-start gap-2 md:mt-4">
-          <MapPin className="mt-1 h-4 w-4 shrink-0 text-brand" aria-hidden="true" />
-          <p className="text-left">
-            <span className="block text-sm font-semibold tracking-[0.12em] text-carbune uppercase sm:text-base">
-              Muzeul Național al Țăranului Român
-            </span>
-            <span className="block text-sm text-carbune/70">Str. Monetăriei 3, București</span>
-          </p>
+          <div aria-hidden="true" className="my-3 flex items-center gap-3 md:my-2.5">
+            <span className="h-px flex-1 bg-ocru/60" />
+            <span className="h-1.5 w-1.5 rotate-45 bg-ocru" />
+            <span className="h-px flex-1 bg-ocru/60" />
+          </div>
+
+          {/* Locație */}
+          <div className="flex items-start justify-center gap-2">
+            <MapPin className="mt-1 h-4 w-4 shrink-0 text-brand" aria-hidden="true" />
+            <p className="text-left">
+              <span className="block text-sm font-semibold tracking-[0.12em] text-carbune uppercase sm:text-base">
+                Muzeul Național al Țăranului Român
+              </span>
+              <span className="block text-sm text-carbune/70">Str. Monetăriei 3, București</span>
+            </p>
+          </div>
         </div>
+
 
         {/* Butoane */}
         <div className="mt-7 flex w-full max-w-md flex-col gap-3 sm:w-auto sm:flex-row md:mt-4">
