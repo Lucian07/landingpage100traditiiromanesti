@@ -36,7 +36,7 @@ export function SiteHeader() {
           <img
             src={siteContent.brand.logo}
             alt={siteContent.brand.logoAlt}
-            className="h-10 w-auto"
+            className="h-14 w-auto sm:h-16"
           />
           <span
             className={cn(
