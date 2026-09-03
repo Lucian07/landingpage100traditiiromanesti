@@ -8,9 +8,8 @@ export const siteContent = {
   brand: {
     numeEveniment: "Târgul 100 de Tradiții Românești",
     fundatie: "Fundația Cogaion",
-    // Înlocuiește /logo.png cu logo-ul real al fundației (public/logo.png)
-    logo: "/logo.png",
-    logoAlt: "Fundația Cogaion",
+    logo: logoAsset.url,
+    logoAlt: "Târgul 100 de Tradiții Românești",
   },
 
   nav: [
