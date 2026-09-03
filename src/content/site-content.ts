@@ -30,7 +30,7 @@ export const siteContent = {
     titlu: "Târgul 100 de Tradiții Românești",
     subtitlu: "18–20 septembrie 2026 · Muzeul Național al Țăranului Român, București",
     paragraf:
-      "[ÎNLOCUIEȘTE] Trei zile de meșteșuguri vii, muzică, gust și povești din toate zonele țării.",
+      "Trei zile de meșteșuguri vii, muzică, gust și povești din toate zonele țării.",
     butonPrimar: "Vezi atracțiile",
     butonSecundar: "Cum ajungi",
     micro: {
@@ -54,51 +54,32 @@ export const siteContent = {
   atractii: {
     titlu: "Atracții principale",
     subtitlu: "Ce te așteaptă în cele trei zile de târg.",
-    nota: "[ÎNLOCUIEȘTE] Programul detaliat pe zile va fi anunțat curând.",
+    nota: "Programul detaliat pe zile va fi anunțat curând.",
     // `icon` corespunde unei iconițe lucide mapate în componenta Atractii
     carduri: [
       {
         icon: "hammer",
         titlu: "Meșteșugari la lucru",
-        descriere:
-          "[ÎNLOCUIEȘTE] Olari, țesătoare, cojocari și fierari care lucrează în fața publicului.",
-      },
-      {
-        icon: "palette",
-        titlu: "Ateliere pentru toți",
-        descriere:
-          "[ÎNLOCUIEȘTE] Sesiuni practice de olărit, încondeiat și țesut, pentru copii și adulți.",
-      },
-      {
-        icon: "music",
-        titlu: "Muzică și dans popular",
-        descriere:
-          "[ÎNLOCUIEȘTE] Spectacole live cu ansambluri folclorice din mai multe zone etnografice.",
+        descriere: "Olari, țesătoare, cojocari și fierari care lucrează în fața publicului.",
       },
       {
         icon: "utensils",
         titlu: "Gastronomie tradițională",
-        descriere:
-          "[ÎNLOCUIEȘTE] Bucate gătite pe loc, după rețete de familie, din produse locale.",
-      },
-      {
-        icon: "baby",
-        titlu: "Zona copiilor",
-        descriere:
-          "[ÎNLOCUIEȘTE] Jocuri de altădată, povești și activități creative supravegheate.",
+        descriere: "Bucate gătite pe loc, după rețete de familie, din produse locale.",
       },
       {
         icon: "basket",
         titlu: "Produse de la producători",
         descriere:
-          "[ÎNLOCUIEȘTE] Miere, brânzeturi, țuică, textile și obiecte lucrate manual, direct de la producători.",
+          "Miere, brânzeturi, țuică, textile și obiecte lucrate manual, direct de la producători.",
       },
     ],
+
   },
 
   galerie: {
     titlu: "Din edițiile trecute",
-    subtitlu: "[ÎNLOCUIEȘTE] Imagini de la edițiile anterioare ale târgului.",
+    subtitlu: "Imagini de la edițiile anterioare ale târgului.",
   },
 
   locatie: {
@@ -127,9 +108,9 @@ export const siteContent = {
     dateContact: {
       titlu: "Date de contact",
       email: "[ÎNLOCUIEȘTE]@cogaion.ro",
-      telefon: "[ÎNLOCUIEȘTE] +40 700 000 000",
+      telefon: "+40 700 000 000",
     },
-    // [ÎNLOCUIEȘTE] URL-urile rețelelor sociale
+    // URL-urile rețelelor sociale
     social: [
       { retea: "facebook" as const, label: "Facebook", url: "[ÎNLOCUIEȘTE]" },
       { retea: "instagram" as const, label: "Instagram", url: "[ÎNLOCUIEȘTE]" },
