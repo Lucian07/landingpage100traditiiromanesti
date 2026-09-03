@@ -1,6 +1,6 @@
 import { CalendarDays, Clock } from "lucide-react";
 import bandaFoto from "@/assets/banda-foto.jpg";
-import { icsDataUrl, googleCalendarUrl } from "@/lib/calendar";
+import { icsDataUrl } from "@/lib/calendar";
 
 /** Ornament folcloric de colț (triunghiuri, romburi, puncte). */
 function ColtOrnament({ className = "" }: { className?: string }) {
@@ -53,7 +53,6 @@ const iconiteFolclorice = [
 ];
 
 const icsHref = icsDataUrl();
-const gcalHref = googleCalendarUrl();
 
 export function Hero() {
 
@@ -109,7 +108,10 @@ export function Hero() {
         </div>
 
         {/* Plăcuța „intrarea este gratuită” */}
-        <div className="mt-7 flex items-center gap-3 rounded-xl bg-brand px-5 py-2 text-crem shadow-soft md:mt-4 md:px-6 md:py-2.5">
+        <a
+          href="#locatie"
+          className="mt-7 flex items-center gap-3 rounded-xl bg-brand px-5 py-2 text-crem shadow-soft transition-colors hover:bg-brand/90 md:mt-4 md:px-6 md:py-2.5"
+        >
           <span aria-hidden="true" className="text-sm text-ocru">
             ★
           </span>
@@ -120,7 +122,8 @@ export function Hero() {
           <span aria-hidden="true" className="text-sm text-ocru">
             ★
           </span>
-        </div>
+        </a>
+
 
         {/* Card comun: data, ora și locația */}
         <div className="mt-7 w-full max-w-lg rounded-xl border border-ocru/60 bg-crem-dark/40 px-5 py-4 md:mt-4 md:py-3">
@@ -166,14 +169,6 @@ export function Hero() {
             Vezi ce se întâmplă
           </a>
         </div>
-        <a
-          href={gcalHref}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-2 text-xs text-carbune/60 underline underline-offset-4 transition-colors hover:text-brand"
-        >
-          sau adaugă în Google Calendar
-        </a>
 
       </div>
 
