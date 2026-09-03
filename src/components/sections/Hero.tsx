@@ -1,6 +1,5 @@
 import { CalendarDays, Clock } from "lucide-react";
 import bandaFoto from "@/assets/banda-foto.jpg";
-import { icsDataUrl } from "@/lib/calendar";
 
 /** Ornament folcloric de colț (triunghiuri, romburi, puncte). */
 function ColtOrnament({ className = "" }: { className?: string }) {
@@ -52,7 +51,7 @@ const iconiteFolclorice = [
   },
 ];
 
-const icsHref = icsDataUrl();
+const icsHref = "/eveniment.ics";
 
 export function Hero() {
 
