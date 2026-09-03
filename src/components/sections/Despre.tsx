@@ -8,7 +8,7 @@ export function Despre() {
     <section id="despre" className="py-20 md:py-28">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 sm:px-6 md:grid-cols-2 md:gap-16">
         <Reveal>
-          <h2 className="font-serif text-3xl font-bold sm:text-4xl md:text-5xl">{despre.titlu}</h2>
+          <h2 className="section-title text-3xl sm:text-4xl md:text-5xl">{despre.titlu}</h2>
           <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
             {despre.paragrafe.map((p) => (
               <p key={p}>{p}</p>

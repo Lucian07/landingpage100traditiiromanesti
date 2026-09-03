@@ -10,7 +10,7 @@ export function Locatie() {
     <section id="locatie" className="bg-crem-dark/50 py-20 md:py-28">
       <div className="mx-auto grid max-w-6xl items-start gap-12 px-4 sm:px-6 md:grid-cols-2">
         <Reveal>
-          <h2 className="font-serif text-3xl font-bold sm:text-4xl md:text-5xl">{locatie.titlu}</h2>
+          <h2 className="section-title text-3xl sm:text-4xl md:text-5xl">{locatie.titlu}</h2>
           <p className="mt-4 text-base text-muted-foreground">{locatie.subtitlu}</p>
 
           <div className="mt-8 flex items-start gap-3">

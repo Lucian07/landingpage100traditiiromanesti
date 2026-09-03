@@ -35,7 +35,7 @@ export function Galerie() {
     <section id="galerie" className="py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <Reveal className="max-w-2xl">
-          <h2 className="font-serif text-3xl font-bold sm:text-4xl md:text-5xl">
+          <h2 className="section-title text-3xl sm:text-4xl md:text-5xl">
             {siteContent.galerie.titlu}
           </h2>
           <p className="mt-4 text-base text-muted-foreground">{siteContent.galerie.subtitlu}</p>
