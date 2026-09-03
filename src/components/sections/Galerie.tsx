@@ -9,6 +9,7 @@ import iiAsset from "@/assets/galerie-ii.jpg.asset.json";
 import bucate2Asset from "@/assets/galerie-bucate2.jpg.asset.json";
 import standAsset from "@/assets/galerie-stand.jpg.asset.json";
 import atelierAsset from "@/assets/galerie-atelier.jpg.asset.json";
+import papusiAsset from "@/assets/galerie-papusi.jpg.asset.json";
 
 /**
  * TOATE imaginile galeriei sunt definite aici, într-un singur array.
@@ -22,7 +23,7 @@ const galleryImages = [
   { src: bucate2Asset.url, alt: "Bucate tradiționale" },
   { src: bucateAsset.url, alt: "Bucate tradiționale" },
   { src: standAsset.url, alt: "Stand cu bucate tradiționale" },
-  { src: "/galerie-7.jpg", alt: "Fierar lucrând la nicovală în fața publicului" },
+  { src: papusiAsset.url, alt: "" },
   { src: "/galerie-8.jpg", alt: "Vizitatori plimbându-se printre standurile târgului" },
 ];
 
@@ -90,7 +91,7 @@ export function Galerie() {
               >
                 <ChevronRight className="h-6 w-6" />
               </button>
-              <p className="mt-3 text-center text-sm text-crem/80">{activ.alt}</p>
+              {activ.alt && <p className="mt-3 text-center text-sm text-crem/80">{activ.alt}</p>}
             </div>
           )}
         </DialogContent>
