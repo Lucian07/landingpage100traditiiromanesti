@@ -40,7 +40,7 @@ export function SiteHeader() {
           <span
             className={cn(
               "hidden font-serif text-lg font-semibold sm:block",
-              scrolled ? "text-carbune" : "text-crem",
+              "text-carbune",
             )}
           >
             {siteContent.brand.fundatie}
@@ -54,7 +54,7 @@ export function SiteHeader() {
               href={item.href}
               className={cn(
                 "text-sm font-medium transition-colors hover:text-ocru",
-                scrolled ? "text-carbune" : "text-crem",
+                "text-carbune",
               )}
             >
               {item.label}
@@ -73,7 +73,7 @@ export function SiteHeader() {
             onClick={() => setOpen(true)}
             className={cn(
               "inline-flex h-11 w-11 items-center justify-center rounded-lg md:hidden",
-              scrolled ? "text-carbune" : "text-crem",
+              "text-carbune",
             )}
           >
             <Menu className="h-6 w-6" />
