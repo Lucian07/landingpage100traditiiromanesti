@@ -51,20 +51,8 @@ const iconiteFolclorice = [
   },
 ];
 
-/** Link Google Calendar cu data, ora și locația evenimentului. */
-const googleCalendarUrl = (() => {
-  const params = new URLSearchParams({
-    action: "TEMPLATE",
-    text: "Târgul 100 de Tradiții Românești",
-    // 18–20 septembrie 2026, 10:00–19:00 (ora României, UTC+3) în UTC
-    dates: "20260918T070000Z/20260920T160000Z",
-    location: "Muzeul Național al Țăranului Român, Str. Monetăriei 3, București",
-    details:
-      "Târg de tradiții, meșteșuguri și gastronomie românească, organizat de Asociația Kogaion 115. Intrarea este liberă. Program zilnic 10:00 – 19:00.",
-    ctz: "Europe/Bucharest",
-  });
-  return `https://calendar.google.com/calendar/render?${params.toString()}`;
-})();
+const icsHref = icsDataUrl();
+const gcalHref = googleCalendarUrl();
 
 export function Hero() {
 
