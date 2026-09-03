@@ -157,20 +157,6 @@ export function Hero() {
             </div>
           </div>
 
-          <div aria-hidden="true" className="h-3 md:h-2.5" />
-
-
-
-          {/* Locație */}
-          <div className="flex items-start justify-center gap-2">
-            <MapPin className="mt-1 h-4 w-4 shrink-0 text-brand" aria-hidden="true" />
-            <p className="text-left">
-              <span className="block text-sm font-semibold tracking-[0.12em] text-carbune uppercase sm:text-base">
-                Muzeul Național al Țăranului Român
-              </span>
-              <span className="block text-sm text-carbune/70">Str. Monetăriei 3, București</span>
-            </p>
-          </div>
         </div>
 
 
