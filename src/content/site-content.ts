@@ -43,7 +43,9 @@ export const siteContent = {
   despre: {
     titlu: "Un târg cu rădăcini",
     paragrafe: [
-      "Aici am nevoie de instrucțiuni de la doamna Ligia Marica despre istoria Târgului.",
+      "Primul eveniment organizat de noi la Muzeul Național al Țăranului Român a fost în 2012, „REAPAR prin DESIGN” (Remodelarea Artelor Populare și Artizanale Românești prin Design), un proiect cultural finanțat de Administrația Fondului Cultural Național (AFCN). Începând cu 2013, am organizat peste 10 târguri anual în curtea muzeului, depășind astăzi 100 de ediții ale târgului „100 de Tradiții Românești”, în acest loc plin de istorie de pe bulevardul Kiseleff nr. 3, cunoscut și ca „Muzeul de la Șosea”.",
+      "De-a lungul timpului, am avut invitați de seamă din zona muzical-artistică folclorică: Călușarii din Sârbii Măgura – Olt, Ansamblul Burnasul din Teleorman, Grupul Teleormanul, condus de fiul regretatului Liviu Vasilică, ansamblurile de dansuri „Muguraşii” și „Florile” de Teleorman, cete de Dubași din Lăpugiu de Sus – Hunedoara, coruri de colindători și interpreți la fluier, cimpoi sau nai.",
+      "Scopul principal al evenimentelor este valorificarea și reinterpretarea artei populare și a meșteșugurilor românești, susținerea meșterilor populari și a producătorilor autohtoni, precum și promovarea gastronomiei tradiționale.",
     ],
     imagine: despreAsset.url,
     imagineAlt:
