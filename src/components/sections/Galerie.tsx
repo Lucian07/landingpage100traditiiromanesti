@@ -20,7 +20,7 @@ import dansAsset from "@/assets/galerie-dans.jpg.asset.json";
  * (fișierele stau în folderul public/: galerie-1.jpg … galerie-8.jpg).
  */
 const galleryImages = [
-  { src: iiAsset.url, alt: "Ii tradiționale românești" },
+  
   { src: tesatoareAsset.url, alt: "Țesătoare lucrând la război de țesut" },
   { src: atelierAsset.url, alt: "Copii participând la un atelier" },
   { src: bucate2Asset.url, alt: "Bucate tradiționale" },
