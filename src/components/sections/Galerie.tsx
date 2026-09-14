@@ -5,7 +5,7 @@ import { Reveal } from "@/components/Reveal";
 import { siteContent } from "@/content/site-content";
 import tesatoareAsset from "@/assets/galerie-tesatoare.jpg.asset.json";
 import bucateAsset from "@/assets/galerie-bucate.jpg.asset.json";
-import iiAsset from "@/assets/galerie-ii.jpg.asset.json";
+
 import bucate2Asset from "@/assets/galerie-bucate2.jpg.asset.json";
 import standAsset from "@/assets/galerie-stand.jpg.asset.json";
 import atelierAsset from "@/assets/galerie-atelier.jpg.asset.json";
@@ -20,7 +20,7 @@ import dansAsset from "@/assets/galerie-dans.jpg.asset.json";
  * (fișierele stau în folderul public/: galerie-1.jpg … galerie-8.jpg).
  */
 const galleryImages = [
-  { src: iiAsset.url, alt: "Ii tradiționale românești" },
+  
   { src: tesatoareAsset.url, alt: "Țesătoare lucrând la război de țesut" },
   { src: atelierAsset.url, alt: "Copii participând la un atelier" },
   { src: bucate2Asset.url, alt: "Bucate tradiționale" },
