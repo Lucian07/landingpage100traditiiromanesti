@@ -88,7 +88,7 @@ export function Hero() {
       </div>
 
       {/* Conținut central */}
-      <div className="relative z-10 flex min-h-0 flex-1 flex-col items-center justify-center px-8 pt-12 pb-6 text-center sm:px-12 md:pt-6 md:pb-4">
+      <div className="relative z-10 flex min-h-0 flex-1 flex-col items-center justify-center px-14 pt-16 pb-8 text-center sm:px-20 md:pt-14 md:pb-6">
         <h1 className="section-title text-carbune">
           <span className="block text-[clamp(1.5rem,3.2vw,2.5rem)]">Târgul</span>
           <span className="block text-[clamp(3.25rem,8vw,5.75rem)] leading-[0.92] font-black text-brand">
