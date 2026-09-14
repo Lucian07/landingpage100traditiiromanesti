@@ -49,7 +49,7 @@ export const siteContent = {
     ],
     imagine: despreAsset.url,
     imagineAlt:
-      "Stand tradițional „Mustărie” cu butoaie pictate, ștergare brodate, teasc de struguri și coșuri de nuiele",
+      "Costum popular românesc autentic: ie albă brodată cu motive roșii și aurii și catrință roșie cu alesături tradiționale",
   },
 
 
