@@ -58,7 +58,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-svh flex-col overflow-hidden bg-crem pt-24 md:h-svh"
+      className="relative flex min-h-svh flex-col overflow-hidden bg-crem pt-28 md:min-h-svh md:pt-32"
     >
       {/* Grain subtil peste tot fundalul */}
       <svg
@@ -74,13 +74,13 @@ export function Hero() {
       {/* Ramă dublă: bordură roșie + linie aurie interioară */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute top-24 right-2 bottom-2 left-2 z-20 border-[3px] border-brand sm:right-3 sm:bottom-3 sm:left-3"
+        className="pointer-events-none absolute top-28 right-2 bottom-2 left-2 md:top-32 z-20 border-[3px] border-brand sm:right-3 sm:bottom-3 sm:left-3"
       >
         <div className="absolute inset-[6px] border border-ocru/70" />
       </div>
 
       {/* Ornamente în cele 4 colțuri */}
-      <div aria-hidden="true" className="pointer-events-none absolute top-24 right-2 bottom-2 left-2 z-20 sm:right-3 sm:bottom-3 sm:left-3">
+      <div aria-hidden="true" className="pointer-events-none absolute top-28 right-2 bottom-2 left-2 md:top-32 z-20 sm:right-3 sm:bottom-3 sm:left-3">
         <ColtOrnament className="absolute top-1 left-1 h-14 w-14 sm:h-20 sm:w-20" />
         <ColtOrnament className="absolute top-1 right-1 h-14 w-14 scale-x-[-1] sm:h-20 sm:w-20" />
         <ColtOrnament className="absolute bottom-1 left-1 h-14 w-14 scale-y-[-1] sm:h-20 sm:w-20" />
@@ -88,7 +88,7 @@ export function Hero() {
       </div>
 
       {/* Conținut central */}
-      <div className="relative z-10 flex min-h-0 flex-1 flex-col items-center justify-center px-8 pt-12 pb-6 text-center sm:px-12 md:py-2">
+      <div className="relative z-10 flex min-h-0 flex-1 flex-col items-center justify-center px-8 pt-12 pb-6 text-center sm:px-12 md:pt-6 md:pb-4">
         <h1 className="section-title text-carbune">
           <span className="block text-[clamp(1.5rem,3.2vw,2.5rem)]">Târgul</span>
           <span className="block text-[clamp(3.25rem,8vw,5.75rem)] leading-[0.92] font-black text-brand">
