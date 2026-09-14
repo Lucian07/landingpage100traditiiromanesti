@@ -9,7 +9,7 @@ import iiAsset from "@/assets/galerie-ii.jpg.asset.json";
 import bucate2Asset from "@/assets/galerie-bucate2.jpg.asset.json";
 import standAsset from "@/assets/galerie-stand.jpg.asset.json";
 import atelierAsset from "@/assets/galerie-atelier.jpg.asset.json";
-import papusiAsset from "@/assets/galerie-papusi.jpg.asset.json";
+import icoaneAsset from "@/assets/galerie-icoane.jpg.asset.json";
 import uneleAsset from "@/assets/galerie-unelte.jpg.asset.json";
 import costumeAsset from "@/assets/galerie-costume.jpg.asset.json";
 import dansAsset from "@/assets/galerie-dans.jpg.asset.json";
@@ -26,7 +26,7 @@ const galleryImages = [
   { src: bucate2Asset.url, alt: "Bucate tradiționale" },
   { src: bucateAsset.url, alt: "Bucate tradiționale" },
   { src: standAsset.url, alt: "Stand cu bucate tradiționale" },
-  { src: papusiAsset.url, alt: "" },
+  { src: icoaneAsset.url, alt: "" },
   { src: uneleAsset.url, alt: "" },
   { src: costumeAsset.url, alt: "" },
   { src: dansAsset.url, alt: "" },
