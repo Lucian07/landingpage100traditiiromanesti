@@ -132,7 +132,7 @@ export function Hero() {
 
         {/* Card comun: data, ora și locația */}
         <div className="mt-7 w-full max-w-lg rounded-xl border border-ocru/60 bg-crem-dark/40 px-5 py-4 md:mt-4 md:py-3">
-          <div className="flex items-stretch justify-center gap-6 sm:gap-10">
+          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:items-stretch sm:gap-10">
             <div className="flex items-center gap-3">
               <CalendarDays className="h-6 w-6 text-brand" aria-hidden="true" />
               <div className="text-left">
@@ -142,7 +142,7 @@ export function Hero() {
                 <p className="eyebrow mt-1">Octombrie – Noiembrie</p>
               </div>
             </div>
-            <span aria-hidden="true" className="w-px bg-ocru/60" />
+            <span aria-hidden="true" className="hidden w-px bg-ocru/60 sm:block" />
             <div className="flex items-center gap-3">
               <Clock className="h-6 w-6 text-brand" aria-hidden="true" />
               <div className="text-left">
