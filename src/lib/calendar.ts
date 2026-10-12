@@ -11,9 +11,9 @@ export const EVENIMENT = {
   descriere:
     "Târg de tradiții, meșteșuguri și gastronomie românească, organizat de Asociația Kogaion 115. Intrarea este liberă. Program zilnic 10:00 – 18:00.",
   url: "https://traditii-romania-landing.lovable.app/",
-  /** 30 octombrie – 1 noiembrie 2026, 10:00–18:00 ora României (UTC+2, ora de iarnă) → UTC */
-  startUtc: "20261030T080000Z",
-  endUtc: "20261101T160000Z",
+  /** 31 octombrie 2026, 10:00–18:00 ora României (UTC+2, ora de iarnă) → UTC */
+  startUtc: "20261031T080000Z",
+  endUtc: "20261031T160000Z",
 };
 
 function escapeText(value: string) {
