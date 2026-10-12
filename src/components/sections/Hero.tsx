@@ -141,7 +141,7 @@ export function Hero() {
                 <p className="eyebrow mt-1 whitespace-nowrap text-[10px] sm:text-xs">Octombrie – Noiembrie</p>
               </div>
             </div>
-            <span aria-hidden="true" className="h-px w-16 bg-ocru/60 sm:h-auto sm:w-px" />
+            <span aria-hidden="true" className="h-px w-12 bg-ocru/60 sm:h-auto sm:w-px" />
             <div className="flex min-w-0 flex-col items-center gap-1.5 text-center sm:flex-row sm:gap-3 sm:text-left">
               <Clock className="h-5 w-5 shrink-0 text-brand sm:h-6 sm:w-6" aria-hidden="true" />
               <div className="min-w-0">
