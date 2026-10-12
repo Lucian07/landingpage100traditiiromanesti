@@ -9,7 +9,7 @@ import { Contact } from "@/components/sections/Contact";
 import { SiteFooter } from "@/components/sections/SiteFooter";
 import { Ornament } from "@/components/Ornament";
 
-const titlu = "Târgul 100 de Tradiții Românești · 18–20 septembrie 2026, București";
+const titlu = "Târgul 100 de Tradiții Românești · 30 octombrie – 1 noiembrie 2026, București";
 const descriere =
   "Trei zile de meșteșuguri vii, muzică populară, gastronomie tradițională și ateliere, la Muzeul Național al Țăranului Român. Eveniment organizat de Asociația Kogaion 115.";
 
