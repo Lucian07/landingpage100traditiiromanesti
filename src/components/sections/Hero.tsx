@@ -158,11 +158,11 @@ export function Hero() {
 
 
         {/* Butoane */}
-        <div className="mt-7 flex w-full max-w-md flex-col items-center gap-3 sm:w-auto sm:flex-row md:mt-4">
+        <div className="mt-7 flex w-full max-w-md flex-col items-center gap-3 sm:w-auto sm:max-w-none sm:flex-row md:mt-4">
           <a
             href={icsHref}
             download="targul-100-traditii-romanesti.ics"
-            className="inline-flex h-11 w-full items-center justify-center rounded-md bg-brand px-6 text-sm font-semibold text-crem transition-colors hover:bg-brand/90 sm:w-auto"
+            className="inline-flex h-11 w-full items-center justify-center whitespace-nowrap rounded-md bg-brand px-6 text-sm font-semibold text-crem transition-colors hover:bg-brand/90 sm:w-auto"
           >
             Adaugă în calendar
           </a>
