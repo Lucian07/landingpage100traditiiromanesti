@@ -171,7 +171,7 @@ export function Hero() {
             {...(expozantExtern
               ? { target: "_blank", rel: "noopener noreferrer" }
               : {})}
-            className="inline-flex h-11 w-full items-center justify-center gap-2.5 rounded-md border border-ocru bg-crem-dark/50 px-5 text-sm font-semibold text-carbune transition-colors hover:bg-ocru/20 sm:w-auto sm:whitespace-nowrap sm:px-6"
+            className="inline-flex h-11 w-full items-center justify-center gap-2.5 rounded-md border border-ocru bg-crem-dark/50 px-4 text-[13px] font-semibold text-carbune transition-colors hover:bg-ocru/20 sm:w-auto sm:whitespace-nowrap sm:px-6 sm:text-sm"
           >
             <Store className="h-4 w-4 shrink-0 text-brand" aria-hidden="true" />
             {butonExpozant}
