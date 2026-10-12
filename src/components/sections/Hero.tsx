@@ -130,11 +130,11 @@ export function Hero() {
 
 
         {/* Card comun: data, ora și locația */}
-        <div className="mt-7 w-full max-w-lg rounded-xl border border-ocru/60 bg-crem-dark/40 px-4 py-4 sm:px-5 md:mt-4 md:py-3">
-          <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:items-stretch sm:gap-10">
-            <div className="flex flex-col items-center gap-1.5 text-center sm:flex-row sm:gap-3 sm:text-left">
+        <div className="mt-7 w-full max-w-lg overflow-hidden rounded-xl border border-ocru/60 bg-crem-dark/40 px-4 py-4 sm:px-6 md:mt-4 md:py-3">
+          <div className="flex min-w-0 flex-col items-center justify-center gap-3 sm:flex-row sm:items-stretch sm:gap-8">
+            <div className="flex min-w-0 flex-col items-center gap-1.5 text-center sm:flex-row sm:gap-3 sm:text-left">
               <CalendarDays className="h-5 w-5 shrink-0 text-brand sm:h-6 sm:w-6" aria-hidden="true" />
-              <div>
+              <div className="min-w-0">
                 <p className="whitespace-nowrap font-serif text-2xl leading-none font-bold text-carbune sm:text-3xl">
                   30 – 1
                 </p>
@@ -142,10 +142,10 @@ export function Hero() {
               </div>
             </div>
             <span aria-hidden="true" className="h-px w-16 bg-ocru/60 sm:h-auto sm:w-px" />
-            <div className="flex flex-col items-center gap-1.5 text-center sm:flex-row sm:gap-3 sm:text-left">
+            <div className="flex min-w-0 flex-col items-center gap-1.5 text-center sm:flex-row sm:gap-3 sm:text-left">
               <Clock className="h-5 w-5 shrink-0 text-brand sm:h-6 sm:w-6" aria-hidden="true" />
-              <div>
-                <p className="whitespace-nowrap font-serif text-2xl leading-none font-bold text-carbune sm:text-3xl">
+              <div className="min-w-0">
+                <p className="whitespace-nowrap font-serif text-2xl leading-none font-bold text-carbune sm:text-2xl md:text-3xl">
                   10:00 – 18:00
                 </p>
                 <p className="eyebrow mt-1 whitespace-nowrap text-[10px] sm:text-xs">Program zilnic</p>
