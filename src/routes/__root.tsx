@@ -78,7 +78,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Târgul 100 de Tradiții Românești · 18–20 septembrie 2026, București" },
+      { title: "Târgul 100 de Tradiții Românești · 30 octombrie – 1 noiembrie 2026, București" },
       {
         name: "description",
         content:

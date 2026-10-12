@@ -9,11 +9,11 @@ export const EVENIMENT = {
   locatie:
     "Curtea Muzeului Național al Țăranului Român, Str. Monetăriei nr. 3, București",
   descriere:
-    "Târg de tradiții, meșteșuguri și gastronomie românească, organizat de Asociația Kogaion 115. Intrarea este liberă. Program zilnic 10:00 – 19:00.",
+    "Târg de tradiții, meșteșuguri și gastronomie românească, organizat de Asociația Kogaion 115. Intrarea este liberă. Program zilnic 10:00 – 18:00.",
   url: "https://traditii-romania-landing.lovable.app/",
-  /** 18–20 septembrie 2026, 10:00–19:00 ora României (UTC+3) → UTC */
-  startUtc: "20260918T070000Z",
-  endUtc: "20260920T160000Z",
+  /** 30 octombrie – 1 noiembrie 2026, 10:00–18:00 ora României (UTC+2, ora de iarnă) → UTC */
+  startUtc: "20261030T080000Z",
+  endUtc: "20261101T160000Z",
 };
 
 function escapeText(value: string) {

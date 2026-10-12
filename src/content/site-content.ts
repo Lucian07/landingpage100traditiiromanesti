@@ -28,13 +28,13 @@ export const siteContent = {
     imagine: "/hero.jpg",
     imagineAlt: "Meșteșugari și vizitatori la Târgul 100 de Tradiții Românești",
     titlu: "Târgul 100 de Tradiții Românești",
-    subtitlu: "18–20 septembrie 2026 · Muzeul Național al Țăranului Român, București",
+    subtitlu: "30 octombrie – 1 noiembrie 2026 · Muzeul Național al Țăranului Român, București",
     paragraf:
       "Trei zile de meșteșuguri vii, muzică, gust și povești din toate zonele țării.",
     butonPrimar: "Vezi atracțiile",
     butonSecundar: "Cum ajungi",
     micro: {
-      data: "18–20 septembrie",
+      data: "30 octombrie – 1 noiembrie",
       adresa: "În curtea Muzeului Național al Țăranului Român, Str. Monetăriei 3, București",
       program: "10:00 – 19:00",
     },
@@ -79,6 +79,14 @@ export const siteContent = {
 
   },
 
+  expozanti: {
+    titlu: "Ești meșter popular sau producător?",
+    text: "Vino să-ți prezinți meșteșugurile și produsele tradiționale în fața publicului, în curtea muzeului. Înscrie-te ca expozant prin formularul de participare.",
+    buton: "Înscrie-te ca expozant",
+    // Link-ul către formularul pentru expozanți se completează de organizatori.
+    link: "",
+  },
+
   galerie: {
     titlu: "Din edițiile trecute",
     subtitlu: "Imagini de la edițiile anterioare ale târgului.",
@@ -93,7 +101,7 @@ export const siteContent = {
       { titlu: "Intrarea 1", text: "Str. Monetăriei nr. 3" },
       { titlu: "Intrarea 2", text: "Bd. Ion Mihalache" },
       { titlu: "Intrarea 3", text: "Șos. Kiseleff nr. 3" },
-      { titlu: "Program", text: "18 – 20 septembrie · 10:00 – 19:00" },
+      { titlu: "Program", text: "30 octombrie – 1 noiembrie · 10:00 – 18:00" },
       { titlu: "Acces", text: "Intrarea este LIBERĂ!" },
     ],
     butonHarta: "Deschide în Google Maps",

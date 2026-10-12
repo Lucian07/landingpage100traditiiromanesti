@@ -3,13 +3,14 @@ import { SiteHeader } from "@/components/sections/SiteHeader";
 import { Hero } from "@/components/sections/Hero";
 import { Despre } from "@/components/sections/Despre";
 import { Atractii } from "@/components/sections/Atractii";
+import { Expozanti } from "@/components/sections/Expozanti";
 import { Galerie } from "@/components/sections/Galerie";
 import { Locatie } from "@/components/sections/Locatie";
 import { Contact } from "@/components/sections/Contact";
 import { SiteFooter } from "@/components/sections/SiteFooter";
 import { Ornament } from "@/components/Ornament";
 
-const titlu = "Târgul 100 de Tradiții Românești · 18–20 septembrie 2026, București";
+const titlu = "Târgul 100 de Tradiții Românești · 30 octombrie – 1 noiembrie 2026, București";
 const descriere =
   "Trei zile de meșteșuguri vii, muzică populară, gastronomie tradițională și ateliere, la Muzeul Național al Țăranului Român. Eveniment organizat de Asociația Kogaion 115.";
 
@@ -18,8 +19,8 @@ const eventJsonLd = {
   "@type": "Event",
   name: "Târgul 100 de Tradiții Românești",
   description: descriere,
-  startDate: "2026-09-18",
-  endDate: "2026-09-20",
+  startDate: "2026-10-30",
+  endDate: "2026-11-01",
   eventStatus: "https://schema.org/EventScheduled",
   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
   location: {
@@ -66,6 +67,7 @@ function Index() {
         <Despre />
         <Ornament />
         <Atractii />
+        <Expozanti />
         <Galerie />
         <Ornament />
         <Locatie />

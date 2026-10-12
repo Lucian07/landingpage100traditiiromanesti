@@ -131,9 +131,9 @@ export function Hero() {
               <CalendarDays className="h-6 w-6 text-brand" aria-hidden="true" />
               <div className="text-left">
                 <p className="font-serif text-2xl leading-none font-bold text-carbune sm:text-3xl">
-                  18–20
+                  30 – 1
                 </p>
-                <p className="eyebrow mt-1">Septembrie</p>
+                <p className="eyebrow mt-1">Octombrie – Noiembrie</p>
               </div>
             </div>
             <span aria-hidden="true" className="w-px bg-ocru/60" />
@@ -141,7 +141,7 @@ export function Hero() {
               <Clock className="h-6 w-6 text-brand" aria-hidden="true" />
               <div className="text-left">
                 <p className="font-serif text-2xl leading-none font-bold text-carbune sm:text-3xl">
-                  10–19
+                  10–18
                 </p>
                 <p className="eyebrow mt-1">Orele</p>
               </div>
