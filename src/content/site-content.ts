@@ -56,7 +56,6 @@ export const siteContent = {
   atractii: {
     titlu: "Atracții principale",
     subtitlu: "Ce te așteaptă în cele trei zile de târg.",
-    nota: "Programul detaliat pe zile va fi anunțat curând.",
     // `icon` corespunde unei iconițe lucide mapate în componenta Atractii
     carduri: [
       {
