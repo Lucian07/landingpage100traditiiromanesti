@@ -18,8 +18,8 @@ const eventJsonLd = {
   "@type": "Event",
   name: "Târgul 100 de Tradiții Românești",
   description: descriere,
-  startDate: "2026-09-18",
-  endDate: "2026-09-20",
+  startDate: "2026-10-30",
+  endDate: "2026-11-01",
   eventStatus: "https://schema.org/EventScheduled",
   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
   location: {
