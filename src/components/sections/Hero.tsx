@@ -171,14 +171,14 @@ export function Hero() {
             {...(expozantExtern
               ? { target: "_blank", rel: "noopener noreferrer" }
               : {})}
-            className="inline-flex h-11 w-full items-center justify-center gap-2.5 rounded-md border border-ocru bg-crem-dark/50 px-6 text-sm font-semibold text-carbune transition-colors hover:bg-ocru/20 sm:w-auto"
+            className="inline-flex h-11 w-full items-center justify-center gap-2.5 rounded-md border border-ocru bg-crem-dark/50 px-5 text-sm font-semibold text-carbune transition-colors hover:bg-ocru/20 sm:w-auto sm:whitespace-nowrap sm:px-6"
           >
             <Store className="h-4 w-4 shrink-0 text-brand" aria-hidden="true" />
             {butonExpozant}
           </a>
           <a
             href="#atractii"
-            className="inline-flex h-11 w-full items-center justify-center rounded-md border border-brand px-6 text-sm font-semibold text-brand transition-colors hover:bg-brand hover:text-crem sm:w-auto"
+            className="inline-flex h-11 w-full items-center justify-center rounded-md border border-brand px-6 text-sm font-semibold text-brand transition-colors hover:bg-brand hover:text-crem sm:w-auto sm:whitespace-nowrap"
           >
             Vezi ce se întâmplă
           </a>
