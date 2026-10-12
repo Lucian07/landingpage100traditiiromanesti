@@ -38,8 +38,6 @@ export function Atractii() {
             );
           })}
         </ul>
-
-        <p className="mt-10 text-sm text-muted-foreground italic">{atractii.nota}</p>
       </div>
     </section>
   );
