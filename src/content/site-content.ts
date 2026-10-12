@@ -82,8 +82,8 @@ export const siteContent = {
     titlu: "Ești meșter popular sau producător?",
     text: "Vino să-ți prezinți meșteșugurile și produsele tradiționale în fața publicului, în curtea muzeului. Înscrie-te ca expozant prin formularul de participare.",
     buton: "Înscrie-te ca expozant",
-    // Link-ul către formularul pentru expozanți se completează de organizatori.
-    link: "",
+    // Link-ul către formularul Google pentru expozanți.
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSfJH1DBWm5wjAeXFp9S-PQe7N5udNkTUXv1cqH0KDUU4JpuQQ/viewform?usp=publish-editor",
   },
 
   galerie: {
