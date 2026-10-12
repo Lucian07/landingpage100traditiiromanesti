@@ -130,7 +130,7 @@ export function Hero() {
 
 
         {/* Card comun: data, ora și locația */}
-        <div className="mt-7 w-full max-w-lg overflow-hidden rounded-xl border border-ocru/60 bg-crem-dark/40 px-4 py-4 sm:px-6 md:mt-4 md:py-3">
+        <div className="mt-7 w-full max-w-lg overflow-hidden rounded-xl border border-ocru/60 bg-crem-dark/40 px-4 py-4 sm:max-w-2xl sm:px-6 md:mt-4 md:py-3">
           <div className="flex min-w-0 flex-col items-center justify-center gap-3 sm:flex-row sm:items-stretch sm:gap-8">
             <div className="flex min-w-0 flex-col items-center gap-1.5 text-center sm:flex-row sm:gap-3 sm:text-left">
               <CalendarDays className="h-5 w-5 shrink-0 text-brand sm:h-6 sm:w-6" aria-hidden="true" />
