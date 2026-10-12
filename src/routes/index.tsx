@@ -3,6 +3,7 @@ import { SiteHeader } from "@/components/sections/SiteHeader";
 import { Hero } from "@/components/sections/Hero";
 import { Despre } from "@/components/sections/Despre";
 import { Atractii } from "@/components/sections/Atractii";
+import { Expozanti } from "@/components/sections/Expozanti";
 import { Galerie } from "@/components/sections/Galerie";
 import { Locatie } from "@/components/sections/Locatie";
 import { Contact } from "@/components/sections/Contact";
