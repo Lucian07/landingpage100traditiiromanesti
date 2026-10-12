@@ -52,7 +52,7 @@ const iconiteFolclorice = [
   },
 ];
 
-const icsHref = "/eveniment.ics";
+const icsHref = "/eveniment.ics?v=20261031";
 
 const { buton: butonExpozant } = siteContent.expozanti;
 /** Butonul din hero coboară la secțiunea „Ești meșter popular sau producător?". */
