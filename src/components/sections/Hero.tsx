@@ -1,5 +1,6 @@
-import { CalendarDays, Clock } from "lucide-react";
+import { CalendarDays, Clock, Store } from "lucide-react";
 import bandaFoto from "@/assets/banda-foto.jpg";
+import { siteContent } from "@/content/site-content";
 
 /** Ornament folcloric de colț (triunghiuri, romburi, puncte). */
 function ColtOrnament({ className = "" }: { className?: string }) {
@@ -52,6 +53,11 @@ const iconiteFolclorice = [
 ];
 
 const icsHref = "/eveniment.ics";
+
+const { buton: butonExpozant, link: linkExpozant } = siteContent.expozanti;
+/** Cât timp link-ul formularului nu este completat, butonul duce la secțiunea Expozanți. */
+const expozantHref = linkExpozant || "#expo";
+const expozantExtern = /^https?:\/\//.test(linkExpozant);
 
 export function Hero() {
 
@@ -126,7 +132,7 @@ export function Hero() {
 
         {/* Card comun: data, ora și locația */}
         <div className="mt-7 w-full max-w-lg rounded-xl border border-ocru/60 bg-crem-dark/40 px-5 py-4 md:mt-4 md:py-3">
-          <div className="flex items-stretch justify-center gap-6 sm:gap-10">
+          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:items-stretch sm:gap-10">
             <div className="flex items-center gap-3">
               <CalendarDays className="h-6 w-6 text-brand" aria-hidden="true" />
               <div className="text-left">
@@ -136,7 +142,7 @@ export function Hero() {
                 <p className="eyebrow mt-1">Octombrie – Noiembrie</p>
               </div>
             </div>
-            <span aria-hidden="true" className="w-px bg-ocru/60" />
+            <span aria-hidden="true" className="hidden w-px bg-ocru/60 sm:block" />
             <div className="flex items-center gap-3">
               <Clock className="h-6 w-6 text-brand" aria-hidden="true" />
               <div className="text-left">
@@ -152,18 +158,27 @@ export function Hero() {
 
 
         {/* Butoane */}
-        <div className="mt-7 flex w-full max-w-md flex-col items-center gap-3 sm:w-auto sm:flex-row md:mt-4">
-
+        <div className="mt-7 flex w-full max-w-md flex-col items-center gap-3 sm:w-auto sm:max-w-none sm:flex-row md:mt-4">
           <a
             href={icsHref}
             download="targul-100-traditii-romanesti.ics"
-            className="inline-flex h-11 w-full items-center justify-center rounded-md bg-brand px-6 text-sm font-semibold text-crem transition-colors hover:bg-brand/90 sm:w-auto"
+            className="inline-flex h-11 w-full items-center justify-center whitespace-nowrap rounded-md bg-brand px-6 text-sm font-semibold text-crem transition-colors hover:bg-brand/90 sm:w-auto"
           >
             Adaugă în calendar
           </a>
           <a
+            href={expozantHref}
+            {...(expozantExtern
+              ? { target: "_blank", rel: "noopener noreferrer" }
+              : {})}
+            className="inline-flex h-11 w-full items-center justify-center gap-2.5 rounded-md border border-ocru bg-crem-dark/50 px-4 text-[13px] font-semibold text-carbune transition-colors hover:bg-ocru/20 sm:w-auto sm:whitespace-nowrap sm:px-6 sm:text-sm"
+          >
+            <Store className="h-4 w-4 shrink-0 text-brand" aria-hidden="true" />
+            {butonExpozant}
+          </a>
+          <a
             href="#atractii"
-            className="inline-flex h-11 w-full items-center justify-center rounded-md border border-brand px-6 text-sm font-semibold text-brand transition-colors hover:bg-brand hover:text-crem sm:w-auto"
+            className="inline-flex h-11 w-full items-center justify-center rounded-md border border-brand px-6 text-sm font-semibold text-brand transition-colors hover:bg-brand hover:text-crem sm:w-auto sm:whitespace-nowrap"
           >
             Vezi ce se întâmplă
           </a>
