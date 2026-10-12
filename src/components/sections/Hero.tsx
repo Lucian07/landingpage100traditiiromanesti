@@ -1,5 +1,6 @@
-import { CalendarDays, Clock } from "lucide-react";
+import { CalendarDays, Clock, Store } from "lucide-react";
 import bandaFoto from "@/assets/banda-foto.jpg";
+import { siteContent } from "@/content/site-content";
 
 /** Ornament folcloric de colț (triunghiuri, romburi, puncte). */
 function ColtOrnament({ className = "" }: { className?: string }) {
@@ -52,6 +53,11 @@ const iconiteFolclorice = [
 ];
 
 const icsHref = "/eveniment.ics";
+
+const { buton: butonExpozant, link: linkExpozant } = siteContent.expozanti;
+/** Cât timp link-ul formularului nu este completat, butonul duce la secțiunea Expozanți. */
+const expozantHref = linkExpozant || "#expo";
+const expozantExtern = /^https?:\/\//.test(linkExpozant);
 
 export function Hero() {
 
