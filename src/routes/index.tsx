@@ -67,6 +67,7 @@ function Index() {
         <Despre />
         <Ornament />
         <Atractii />
+        <Expozanti />
         <Galerie />
         <Ornament />
         <Locatie />
