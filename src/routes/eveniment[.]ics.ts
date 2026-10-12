@@ -11,7 +11,7 @@ export const Route = createFileRoute("/eveniment.ics")({
             "Content-Type": "text/calendar; charset=utf-8; method=PUBLISH",
             "Content-Disposition":
               'attachment; filename="targul-100-traditii-romanesti.ics"',
-            "Cache-Control": "public, max-age=3600",
+            "Cache-Control": "no-store, no-cache, must-revalidate",
           },
         });
       },

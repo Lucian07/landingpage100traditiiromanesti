@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/Reveal";
 import { siteContent } from "@/content/site-content";
 
-const icsHref = "/eveniment.ics";
+const icsHref = "/eveniment.ics?v=20261031";
 
 export function Locatie() {
   const { locatie } = siteContent;
