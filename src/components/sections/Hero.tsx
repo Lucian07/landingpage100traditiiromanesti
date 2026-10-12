@@ -145,7 +145,7 @@ export function Hero() {
             <div className="flex min-w-0 flex-col items-center gap-1.5 text-center sm:flex-row sm:gap-3 sm:text-left">
               <Clock className="h-5 w-5 shrink-0 text-brand sm:h-6 sm:w-6" aria-hidden="true" />
               <div className="min-w-0">
-                <p className="whitespace-nowrap font-serif text-2xl leading-none font-bold text-carbune sm:text-2xl md:text-3xl">
+                <p className="whitespace-nowrap font-serif text-[1.4rem] leading-none font-bold text-carbune sm:text-2xl md:text-3xl">
                   10:00 – 18:00
                 </p>
                 <p className="eyebrow mt-1 whitespace-nowrap text-[10px] sm:text-xs">Program zilnic</p>
