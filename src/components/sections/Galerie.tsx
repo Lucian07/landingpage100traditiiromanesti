@@ -29,7 +29,15 @@ import g2026_9 from "@/assets/galerie-2026-9.jpg.asset.json";
  * (fișierele stau în folderul public/: galerie-1.jpg … galerie-8.jpg).
  */
 const galleryImages = [
-  
+  { src: g2026_1.url, alt: "Broderie populară lucrată manual" },
+  { src: g2026_2.url, alt: "Interviu la târg" },
+  { src: g2026_3.url, alt: "Tocăniță de legume gătită pe loc" },
+  { src: g2026_4.url, alt: "Stand cu struguri și produse ale producătorilor" },
+  { src: g2026_5.url, alt: "Must proaspăt și struguri" },
+  { src: g2026_6.url, alt: "Pește la grătar" },
+  { src: g2026_7.url, alt: "Unelte și obiecte vechi expuse la târg" },
+  { src: g2026_8.url, alt: "Vizitatori la târg" },
+  { src: g2026_9.url, alt: "Grătar cu mici și ardei" },
   { src: tesatoareAsset.url, alt: "Țesătoare lucrând la război de țesut" },
   { src: atelierAsset.url, alt: "Copii participând la un atelier" },
   { src: bucate2Asset.url, alt: "Bucate tradiționale" },
