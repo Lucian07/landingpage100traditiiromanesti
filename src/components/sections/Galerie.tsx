@@ -47,15 +47,6 @@ const galleryImages = [
   { src: uneleAsset.url, alt: "" },
   { src: costumeAsset.url, alt: "" },
   { src: dansAsset.url, alt: "" },
-  { src: g2026_1.url, alt: "Broderie populară lucrată manual" },
-  { src: g2026_2.url, alt: "Interviu la târg" },
-  { src: g2026_3.url, alt: "Tocăniță de legume gătită pe loc" },
-  { src: g2026_4.url, alt: "Stand cu struguri și produse ale producătorilor" },
-  { src: g2026_5.url, alt: "Must proaspăt și struguri" },
-  { src: g2026_6.url, alt: "Pește la grătar" },
-  { src: g2026_7.url, alt: "Unelte și obiecte vechi expuse la târg" },
-  { src: g2026_8.url, alt: "Vizitatori la târg" },
-  { src: g2026_9.url, alt: "Grătar cu mici și ardei" },
 ];
 
 export function Galerie() {
