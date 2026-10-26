@@ -13,6 +13,15 @@ import icoaneAsset from "@/assets/galerie-icoane.jpg.asset.json";
 import uneleAsset from "@/assets/galerie-unelte.jpg.asset.json";
 import costumeAsset from "@/assets/galerie-costume.jpg.asset.json";
 import dansAsset from "@/assets/galerie-dans.jpg.asset.json";
+import g2026_1 from "@/assets/galerie-2026-1.jpg.asset.json";
+import g2026_2 from "@/assets/galerie-2026-2.jpg.asset.json";
+import g2026_3 from "@/assets/galerie-2026-3.jpg.asset.json";
+import g2026_4 from "@/assets/galerie-2026-4.jpg.asset.json";
+import g2026_5 from "@/assets/galerie-2026-5.jpg.asset.json";
+import g2026_6 from "@/assets/galerie-2026-6.jpg.asset.json";
+import g2026_7 from "@/assets/galerie-2026-7.jpg.asset.json";
+import g2026_8 from "@/assets/galerie-2026-8.jpg.asset.json";
+import g2026_9 from "@/assets/galerie-2026-9.jpg.asset.json";
 
 /**
  * TOATE imaginile galeriei sunt definite aici, într-un singur array.
