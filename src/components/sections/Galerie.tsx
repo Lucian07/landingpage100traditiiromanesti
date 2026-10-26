@@ -29,16 +29,6 @@ import g2026_9 from "@/assets/galerie-2026-9.jpg.asset.json";
  * (fișierele stau în folderul public/: galerie-1.jpg … galerie-8.jpg).
  */
 const galleryImages = [
-  
-  { src: tesatoareAsset.url, alt: "Țesătoare lucrând la război de țesut" },
-  { src: atelierAsset.url, alt: "Copii participând la un atelier" },
-  { src: bucate2Asset.url, alt: "Bucate tradiționale" },
-  { src: bucateAsset.url, alt: "Bucate tradiționale" },
-  { src: standAsset.url, alt: "Stand cu bucate tradiționale" },
-  { src: icoaneAsset.url, alt: "" },
-  { src: uneleAsset.url, alt: "" },
-  { src: costumeAsset.url, alt: "" },
-  { src: dansAsset.url, alt: "" },
   { src: g2026_1.url, alt: "Broderie populară lucrată manual" },
   { src: g2026_2.url, alt: "Interviu la târg" },
   { src: g2026_3.url, alt: "Tocăniță de legume gătită pe loc" },
@@ -48,6 +38,15 @@ const galleryImages = [
   { src: g2026_7.url, alt: "Unelte și obiecte vechi expuse la târg" },
   { src: g2026_8.url, alt: "Vizitatori la târg" },
   { src: g2026_9.url, alt: "Grătar cu mici și ardei" },
+  { src: tesatoareAsset.url, alt: "Țesătoare lucrând la război de țesut" },
+  { src: atelierAsset.url, alt: "Copii participând la un atelier" },
+  { src: bucate2Asset.url, alt: "Bucate tradiționale" },
+  { src: bucateAsset.url, alt: "Bucate tradiționale" },
+  { src: standAsset.url, alt: "Stand cu bucate tradiționale" },
+  { src: icoaneAsset.url, alt: "" },
+  { src: uneleAsset.url, alt: "" },
+  { src: costumeAsset.url, alt: "" },
+  { src: dansAsset.url, alt: "" },
 ];
 
 export function Galerie() {
