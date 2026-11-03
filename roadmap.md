@@ -1,6 +1,6 @@
 # Roadmap
 
-- [ ] Actualizare Festivalul Plăcintelor: prima pagină, imagine, 13–15 noiembrie 2026, 10:00–18:00 și calendar verificat.
+- [x] Actualizare Festivalul Plăcintelor: prima pagină, imagine, 13–15 noiembrie 2026, 10:00–18:00 și calendar verificat.
 
 - [x] Backend: tabel `contact_messages` + politică de insert public
 - [x] Design tokens (cărămiziu, ocru, verde, crem, cărbune) + Playfair Display / Inter
