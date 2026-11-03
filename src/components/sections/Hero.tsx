@@ -1,6 +1,7 @@
 import { CalendarDays, Clock, Store } from "lucide-react";
-import bandaFoto from "@/assets/banda-foto.jpg";
+import bandaFoto from "@/assets/festival-placinte.jpg.asset.json";
 import { siteContent } from "@/content/site-content";
+import { CALENDAR_HREF } from "@/lib/calendar";
 
 /** Ornament folcloric de colț (triunghiuri, romburi, puncte). */
 function ColtOrnament({ className = "" }: { className?: string }) {
@@ -52,7 +53,7 @@ const iconiteFolclorice = [
   },
 ];
 
-const icsHref = "/eveniment.ics?v=20261031";
+const icsHref = CALENDAR_HREF;
 
 const { buton: butonExpozant } = siteContent.expozanti;
 /** Butonul din hero coboară la secțiunea „Ești meșter popular sau producător?". */
@@ -94,15 +95,12 @@ export function Hero() {
 
       {/* Conținut central */}
       <div className="relative z-10 flex min-h-0 flex-1 flex-col items-center justify-center px-14 pt-16 pb-8 text-center sm:px-20 md:pt-14 md:pb-6">
-        <h1 className="section-title text-carbune">
-          <span className="block text-[clamp(1.5rem,3.2vw,2.5rem)]">Târgul</span>
-          <span className="block text-[clamp(3.25rem,8vw,5.75rem)] leading-[0.92] font-black text-brand">
-            100
-          </span>
-          <span className="block text-[clamp(1.35rem,2.9vw,2.25rem)]">De Tradiții</span>
-          <span className="block text-[clamp(1.45rem,3.2vw,2.5rem)] text-brand">Românești</span>
-          <span className="sr-only">Târgul 100 de Tradiții Românești</span>
+        <p className="mb-4 font-serif text-sm font-semibold text-carbune sm:text-lg">Târgul 100 de Tradiții Românești</p>
+        <h1 className="section-title max-w-full text-carbune">
+          <span className="block text-2xl sm:text-4xl">Festivalul</span>
+          <span className="block text-3xl leading-tight font-black text-brand sm:text-5xl md:text-6xl">Plăcintelor</span>
         </h1>
+        <p className="mt-4 max-w-lg text-sm leading-relaxed text-carbune sm:text-base">{siteContent.hero.paragraf}</p>
 
         {/* Linie aurie cu romb */}
         <div aria-hidden="true" className="mt-7 flex w-full max-w-md items-center gap-3 md:mt-4">
@@ -136,9 +134,9 @@ export function Hero() {
               <CalendarDays className="h-5 w-5 shrink-0 text-brand sm:h-6 sm:w-6" aria-hidden="true" />
               <div className="min-w-0">
                 <p className="whitespace-nowrap font-serif text-2xl leading-none font-bold text-carbune sm:text-3xl">
-                  30 – 1
+                   13 – 15
                 </p>
-                <p className="eyebrow mt-1 whitespace-nowrap text-[10px] sm:text-xs">Octombrie – Noiembrie</p>
+                <p className="eyebrow mt-1 whitespace-nowrap text-[10px] sm:text-xs">Noiembrie 2026</p>
               </div>
             </div>
             <span aria-hidden="true" className="h-px w-12 bg-ocru/60 sm:h-auto sm:w-px" />
@@ -185,10 +183,10 @@ export function Hero() {
       {/* Bandă foto */}
       <div className="relative z-10 h-[132px] w-full shrink-0 md:h-[150px]">
         <img
-          src={bandaFoto}
-          alt="Ceramică pictată, ștergare țesute și coș de nuiele, obiecte tradiționale românești"
+          src={bandaFoto.url}
+          alt="Plăcinte rumenite cu diferite umpluturi, pe ștergare tradiționale, din afișul Festivalului Plăcintelor"
           width={1920}
-          height={640}
+          height={576}
           className="h-full w-full object-cover"
         />
         <div

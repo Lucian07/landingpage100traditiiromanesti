@@ -2,8 +2,9 @@ import { ExternalLink, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/Reveal";
 import { siteContent } from "@/content/site-content";
+import { CALENDAR_HREF } from "@/lib/calendar";
 
-const icsHref = "/eveniment.ics?v=20261031";
+const icsHref = CALENDAR_HREF;
 
 export function Locatie() {
   const { locatie } = siteContent;

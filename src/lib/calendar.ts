@@ -5,16 +5,18 @@
  */
 
 export const EVENIMENT = {
-  titlu: "Târgul 100 de Tradiții Românești",
+  titlu: "Festivalul Plăcintelor · Târgul 100 de Tradiții Românești",
   locatie:
     "Curtea Muzeului Național al Țăranului Român, Str. Monetăriei nr. 3, București",
   descriere:
-    "Târg de tradiții, meșteșuguri și gastronomie românească, organizat de Asociația Kogaion 115. Intrarea este liberă. Program zilnic 10:00 – 18:00.",
+    "Festivalul Plăcintelor, 13–15 noiembrie 2026, organizat de Asociația Kogaion 115. Plăcinte, meșteșuguri și gastronomie românească. Intrarea este liberă. Program zilnic 10:00 – 18:00.",
   url: "https://targul100detraditiiromanesti.ro/",
-  /** 31 octombrie 2026, 10:00–18:00 ora României (UTC+2, ora de iarnă) → UTC */
-  startUtc: "20261031T080000Z",
-  endUtc: "20261031T160000Z",
+  /** 13 noiembrie 2026, 10:00–18:00 în București (UTC+2), repetat trei zile. */
+  startUtc: "20261113T080000Z",
+  endUtc: "20261113T160000Z",
 };
+
+export const CALENDAR_HREF = "/eveniment.ics?v=20261113";
 
 function escapeText(value: string) {
   return value.replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\n/g, "\\n");
@@ -29,14 +31,15 @@ export function buildIcs(): string {
     "CALSCALE:GREGORIAN",
     "METHOD:PUBLISH",
     "BEGIN:VEVENT",
-    "UID:targul-100-traditii-2026-10-31@kogaion115",
+    "UID:festivalul-placintelor-2026-11-13@kogaion115",
     `DTSTAMP:${stamp}`,
     `DTSTART:${EVENIMENT.startUtc}`,
     `DTEND:${EVENIMENT.endUtc}`,
+    "RRULE:FREQ=DAILY;COUNT=3",
     `SUMMARY:${escapeText(EVENIMENT.titlu)}`,
     `LOCATION:${escapeText(EVENIMENT.locatie)}`,
     `DESCRIPTION:${escapeText(EVENIMENT.descriere)}`,
-    "SEQUENCE:2",
+    "SEQUENCE:0",
     `URL:${EVENIMENT.url}`,
     "END:VEVENT",
     "END:VCALENDAR",
