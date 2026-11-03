@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep calendar download links in one shared constant and generate multi-day festivals as daily occurrences, so all buttons share current dates and opening hours.

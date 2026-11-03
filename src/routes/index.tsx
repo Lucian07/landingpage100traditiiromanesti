@@ -10,17 +10,17 @@ import { Contact } from "@/components/sections/Contact";
 import { SiteFooter } from "@/components/sections/SiteFooter";
 import { Ornament } from "@/components/Ornament";
 
-const titlu = "Târgul 100 de Tradiții Românești · 30 octombrie – 1 noiembrie 2026, București";
+const titlu = "Festivalul Plăcintelor · 13–15 noiembrie 2026, București";
 const descriere =
-  "Trei zile de meșteșuguri vii, muzică populară, gastronomie tradițională și ateliere, la Muzeul Național al Țăranului Român. Eveniment organizat de Asociația Kogaion 115.";
+  "Festivalul Plăcintelor, 13–15 noiembrie 2026, zilnic 10:00–18:00, la Muzeul Național al Țăranului Român. Plăcinte, meșteșuguri și gastronomie tradițională. Intrarea liberă.";
 
 const eventJsonLd = {
   "@context": "https://schema.org",
   "@type": "Event",
-  name: "Târgul 100 de Tradiții Românești",
+  name: "Festivalul Plăcintelor · Târgul 100 de Tradiții Românești",
   description: descriere,
-  startDate: "2026-10-30",
-  endDate: "2026-11-01",
+  startDate: "2026-11-13T10:00:00+02:00",
+  endDate: "2026-11-15T18:00:00+02:00",
   eventStatus: "https://schema.org/EventScheduled",
   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
   location: {
@@ -35,7 +35,6 @@ const eventJsonLd = {
     },
   },
   organizer: { "@type": "Organization", name: "Asociația Kogaion 115" },
-  image: "/hero.jpg",
 };
 
 export const Route = createFileRoute("/")({
@@ -47,7 +46,6 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: titlu },
       { property: "og:description", content: descriere },
       { property: "og:type", content: "website" },
-      { property: "og:image", content: "/hero.jpg" },
       { property: "og:url", content: "/" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: titlu },
