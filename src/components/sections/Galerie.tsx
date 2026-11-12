@@ -22,6 +22,16 @@ import g2026_6 from "@/assets/galerie-2026-6.jpg.asset.json";
 import g2026_7 from "@/assets/galerie-2026-7.jpg.asset.json";
 import g2026_8 from "@/assets/galerie-2026-8.jpg.asset.json";
 import g2026_9 from "@/assets/galerie-2026-9.jpg.asset.json";
+import g2026_11_1 from "@/assets/galerie-2026-11-1.jpg.asset.json";
+import g2026_11_2 from "@/assets/galerie-2026-11-2.jpg.asset.json";
+import g2026_11_3 from "@/assets/galerie-2026-11-3.jpg.asset.json";
+import g2026_11_4 from "@/assets/galerie-2026-11-4.jpg.asset.json";
+import g2026_11_5 from "@/assets/galerie-2026-11-5.jpg.asset.json";
+import g2026_11_6 from "@/assets/galerie-2026-11-6.jpg.asset.json";
+import g2026_11_7 from "@/assets/galerie-2026-11-7.jpg.asset.json";
+import g2026_11_8 from "@/assets/galerie-2026-11-8.jpg.asset.json";
+import g2026_11_9 from "@/assets/galerie-2026-11-9.jpg.asset.json";
+import g2026_11_10 from "@/assets/galerie-2026-11-10.jpg.asset.json";
 
 /**
  * TOATE imaginile galeriei sunt definite aici, într-un singur array.
@@ -29,6 +39,16 @@ import g2026_9 from "@/assets/galerie-2026-9.jpg.asset.json";
  * (fișierele stau în folderul public/: galerie-1.jpg … galerie-8.jpg).
  */
 const galleryImages = [
+  { src: g2026_11_1.url, alt: "Meșter în cojoc de lână cântând la fluier" },
+  { src: g2026_11_2.url, alt: "Sarmale aburinde într-o tavă rotundă" },
+  { src: g2026_11_3.url, alt: "Carne rumenită la grătar" },
+  { src: g2026_11_4.url, alt: "Săpunuri naturale artizanale expuse pe rafturi de lemn" },
+  { src: g2026_11_5.url, alt: "Costum popular cu ie brodată și catrință albastră" },
+  { src: g2026_11_6.url, alt: "Farfurii decorative pictate cu motive tradiționale" },
+  { src: g2026_11_7.url, alt: "Icoană pictată pe lemn, Maica Domnului cu Pruncul" },
+  { src: g2026_11_8.url, alt: "Fluiere din lemn și instrumente tradiționale" },
+  { src: g2026_11_9.url, alt: "Borcane cu miere naturală și o lumânare din ceară" },
+  { src: g2026_11_10.url, alt: "Comerciant cu bucate calde și murături" },
   { src: g2026_1.url, alt: "Broderie populară lucrată manual" },
   { src: g2026_2.url, alt: "Interviu la târg" },
   { src: g2026_3.url, alt: "Tocăniță de legume gătită pe loc" },
