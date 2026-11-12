@@ -90,21 +90,19 @@ export function Galerie() {
           <p className="mt-4 text-base text-muted-foreground">{siteContent.galerie.subtitlu}</p>
         </Reveal>
 
-        <div className="mt-12 columns-1 gap-4 sm:columns-2 lg:columns-3 [&>*]:mb-4">
+        <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {galleryImages.map((img, i) => (
             <button
               key={img.src}
               type="button"
               onClick={() => setIndex(i)}
-              className="block w-full break-inside-avoid overflow-hidden rounded-lg border border-border shadow-soft focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
+              className="group block w-full overflow-hidden rounded-lg border border-border shadow-soft focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
             >
               <img
                 src={img.src}
                 alt={img.alt}
                 loading="lazy"
-                className={`w-full object-cover transition-transform duration-500 hover:scale-[1.03] ${
-                  i % 3 === 0 ? "aspect-[3/4]" : i % 3 === 1 ? "aspect-square" : "aspect-[4/3]"
-                }`}
+                className="aspect-square w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
               />
             </button>
           ))}
