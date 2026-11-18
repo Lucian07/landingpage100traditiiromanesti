@@ -79,7 +79,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Festivalul Plăcintelor · 13–15 noiembrie 2026, București" },
+      { title: "Târg de Sfântul Andrei · 27–29 noiembrie 2026, București" },
       {
         name: "description",
         content:

@@ -27,14 +27,14 @@ export const siteContent = {
     // Înlocuiește cu fotografia de la ediția anterioară (public/hero.jpg)
     imagine: "/hero.jpg",
     imagineAlt: "Meșteșugari și vizitatori la Târgul 100 de Tradiții Românești",
-    titlu: "Festivalul Plăcintelor",
-    subtitlu: "13–15 noiembrie 2026 · Muzeul Național al Țăranului Român, București",
+    titlu: "Târg de Sfântul Andrei",
+    subtitlu: "27–29 noiembrie 2026 · Muzeul Național al Țăranului Român, București",
     paragraf:
-      "Trei zile cu plăcinte, gusturi tradiționale și meșteșuguri românești, în curtea Muzeului Național al Țăranului Român.",
+      "Trei zile de Sfântul Andrei cu meșteri populari, gusturi tradiționale și obiceiuri românești, în curtea Muzeului Național al Țăranului Român.",
     butonPrimar: "Vezi atracțiile",
     butonSecundar: "Cum ajungi",
     micro: {
-      data: "13–15 noiembrie 2026",
+      data: "27–29 noiembrie 2026",
       adresa: "În curtea Muzeului Național al Țăranului Român, Str. Monetăriei 3, București",
       program: "10:00 – 18:00",
     },
@@ -100,7 +100,7 @@ export const siteContent = {
       { titlu: "Intrarea 1", text: "Str. Monetăriei nr. 3" },
       { titlu: "Intrarea 2", text: "Bd. Ion Mihalache" },
       { titlu: "Intrarea 3", text: "Șos. Kiseleff nr. 3" },
-      { titlu: "Program", text: "13–15 noiembrie 2026 · 10:00 – 18:00" },
+      { titlu: "Program", text: "27–29 noiembrie 2026 · 10:00 – 18:00" },
       { titlu: "Acces", text: "Intrarea este LIBERĂ!" },
     ],
     butonHarta: "Deschide în Google Maps",

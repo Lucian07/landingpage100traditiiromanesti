@@ -10,17 +10,17 @@ import { Contact } from "@/components/sections/Contact";
 import { SiteFooter } from "@/components/sections/SiteFooter";
 import { Ornament } from "@/components/Ornament";
 
-const titlu = "Festivalul Plăcintelor · 13–15 noiembrie 2026, București";
+const titlu = "Târg de Sfântul Andrei · 27–29 noiembrie 2026, București";
 const descriere =
-  "Festivalul Plăcintelor, 13–15 noiembrie 2026, zilnic 10:00–18:00, la Muzeul Național al Țăranului Român. Plăcinte, meșteșuguri și gastronomie tradițională. Intrarea liberă.";
+  "Târg de Sfântul Andrei, 27–29 noiembrie 2026, zilnic 10:00–18:00, la Muzeul Național al Țăranului Român. Meșteșuguri, tradiții și gastronomie românească. Intrarea liberă.";
 
 const eventJsonLd = {
   "@context": "https://schema.org",
   "@type": "Event",
-  name: "Festivalul Plăcintelor · Târgul 100 de Tradiții Românești",
+  name: "Târg de Sfântul Andrei · Târgul 100 de Tradiții Românești",
   description: descriere,
-  startDate: "2026-11-13T10:00:00+02:00",
-  endDate: "2026-11-15T18:00:00+02:00",
+  startDate: "2026-11-27T10:00:00+02:00",
+  endDate: "2026-11-29T18:00:00+02:00",
   eventStatus: "https://schema.org/EventScheduled",
   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
   location: {

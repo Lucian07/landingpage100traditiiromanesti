@@ -1,5 +1,5 @@
 import { CalendarDays, Clock, Store } from "lucide-react";
-import bandaFoto from "@/assets/festival-placinte.jpg.asset.json";
+import bandaFoto from "@/assets/galerie-2026-1.jpg.asset.json";
 import { siteContent } from "@/content/site-content";
 import { CALENDAR_HREF } from "@/lib/calendar";
 
@@ -97,8 +97,8 @@ export function Hero() {
       <div className="relative z-10 flex min-h-0 flex-1 flex-col items-center justify-center px-14 pt-16 pb-8 text-center sm:px-20 md:pt-14 md:pb-6">
         <p className="mb-4 font-serif text-sm font-semibold text-carbune sm:text-lg">Târgul 100 de Tradiții Românești</p>
         <h1 className="section-title max-w-full text-carbune">
-          <span className="block text-2xl sm:text-4xl">Festivalul</span>
-          <span className="block text-3xl leading-tight font-black text-brand sm:text-5xl md:text-6xl">Plăcintelor</span>
+          <span className="block text-2xl sm:text-4xl">Târg de</span>
+          <span className="block text-3xl leading-tight font-black text-brand sm:text-5xl md:text-6xl">Sfântul Andrei</span>
         </h1>
         <p className="mt-4 max-w-lg text-sm leading-relaxed text-carbune sm:text-base">{siteContent.hero.paragraf}</p>
 
@@ -134,7 +134,7 @@ export function Hero() {
               <CalendarDays className="h-5 w-5 shrink-0 text-brand sm:h-6 sm:w-6" aria-hidden="true" />
               <div className="min-w-0">
                 <p className="whitespace-nowrap font-serif text-2xl leading-none font-bold text-carbune sm:text-3xl">
-                   13 – 15
+                   27 – 29
                 </p>
                 <p className="eyebrow mt-1 whitespace-nowrap text-[10px] sm:text-xs">Noiembrie 2026</p>
               </div>
@@ -184,7 +184,7 @@ export function Hero() {
       <div className="relative z-10 h-[132px] w-full shrink-0 md:h-[150px]">
         <img
           src={bandaFoto.url}
-          alt="Plăcinte rumenite cu diferite umpluturi, pe ștergare tradiționale, din afișul Festivalului Plăcintelor"
+          alt="Broderie populară românească lucrată manual"
           width={1920}
           height={576}
           className="h-full w-full object-cover"
